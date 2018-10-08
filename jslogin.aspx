@@ -67,20 +67,21 @@
         {
             width:50%;
             height:60px;
-             margin : 0;
+            margin : 0;
             float : left ;
             background-color:#fff;
             
         }
             
-            .fa {
-  padding: 5px;
-  font-size: 10px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-     }
+            .fa 
+        {
+            padding: 5px;
+            font-size: 10px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
 
 .fa:hover {
     opacity: 0.7;
