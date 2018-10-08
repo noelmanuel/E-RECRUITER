@@ -1,0 +1,72 @@
+
+#login-box {
+	width:333px;
+	height: 352px;
+	padding: 58px 76px 0 76px;
+	color: #343843;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(images/loginbox.jpg) no-repeat left top;
+	top: 243px;
+	left: 150px;
+	position: absolute;
+	border-radius: 15px;
+}
+
+#login-box img {
+	border:none;
+}
+
+#login-box h2 {
+	padding:0;
+	color: #FFF;
+	font: bold 30px "Calibri", Arial;
+	
+	margin-top:-3%;
+    height: 78px;
+    width: 329px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+
+#login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+}
+
+#login-box-field {
+	
+	
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+	
+}
+
+
+.form-login  {
+	width: 205px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#1e4f8a;
+	font-size: 16px;
+	color: #ebebeb;
+	
+}
+
+
+.login-box-options  {
+	clear:both;
+	padding-left:87px;
+	font-size: 11px;
+}
+
+.login-box-options a {
+	color:#343843;
+	font-size: 11px;
+}

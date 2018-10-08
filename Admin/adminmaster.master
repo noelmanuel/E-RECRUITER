@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminmaster.master.cs" Inherits="Admin_adminmaster" %>
+<html>
+<head></head>
+<body>
+<p>noel</p>
+</body>
+</html>
