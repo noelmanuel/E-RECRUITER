@@ -27,21 +27,20 @@
         
         .firstbox
         {
-         width:50%;
-         height:40px;
-        margin : 0;
-        float : left ;
+            width:50%;
+            height:40px;
+            margin : 0;
+            float : left ;
             background-color:#3c3d41;
-            
-            }
+        }
+         
          .secondbox
         {
             width:50%;
             height:40px;
-             margin : 0;
+            margin : 0;
             float : left ;
-            background-color:#3c3d41;
-            
+            background-color:#3c3d41;  
         }
         
         .mainbox2
@@ -52,20 +51,18 @@
             height:60px;
             top: 0;
             left: 0;
-            
-            
-            
-            }
+        }
         
         .firstbox2
         {
-         width:50%;
-         height:60px;
-        margin : 0;
-        float : left ;
+            width:50%;
+            height:60px;
+            margin : 0;
+            float : left ;
             background-color:#fff;
             
-            }
+         }
+         
          .secondbox2
         {
             width:50%;
