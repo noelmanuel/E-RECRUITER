@@ -105,16 +105,18 @@
         {
              background: #dd4b39;
              color: white;
-         }
+        }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
+           .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+        }
+            .fa-rss     
+        {
+           background: #ff6600;
+            color: white;
+        }
         .style1
         {
             width: 98%;
