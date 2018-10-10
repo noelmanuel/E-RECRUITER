@@ -297,12 +297,12 @@
          
         
         
-        <img src="images/logo1.jpg" style=" margin-left:10%; margin-top:20px;" /></div>
+        <img src="images/logo1.jpg" style=" margin-left:30%; margin-top:20px;" /></div>
         <div class="secondbox2">
         
         
     
-     <p style="margin-left:12%;">
+     <p style="margin-left:9%;">
      
             
         <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
@@ -318,10 +318,10 @@
                 Width="130px" OnClick="Button3_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
 
-        <div style=" margin-left:75%; margin-top:-45px;">
+        <div style=" margin-left:70%; margin-top:-45px;">
             <div class="dropdown">
             <asp:Button ID="Button4" runat="server" Height="30px" Text="REGISTER" 
-                Width="100px" OnClick="Button4_click" BackColor="Red" 
+                Width="130px" OnClick="Button4_click" BackColor="Red" 
                 BorderStyle="None" ForeColor="White"   />
                 <div class="dropdown-content">
                 <a href="Company/companyregn.aspx">JOB PROVIDER</a>
