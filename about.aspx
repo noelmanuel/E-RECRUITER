@@ -199,6 +199,40 @@
             position:absolute;
             margin-top:-40%;
          }
+         {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:#1AB188;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 97.5%;
+    background-color: #ffff;
+    height: 320px;
+    font-size: 20px;
+   
+}
+
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+        
         footer 
         {
             background: #3c3d41;
@@ -339,58 +373,31 @@
         </div>
 
 
+<header>
+  <h2>ABOUT US</h2>
+</header>
 
-<div style=" width:100%; height:580px;">
-<div style="top: 274px; left: 196px; position: absolute; height: 335px; width: 883px">
-            <table border="0" cellpadding="0" cellspacing="0" class="text-big-content" 
-                width="100%">
-                <tr bgcolor="#FFFFFF">
-                    <td bgcolor="#FFFFFF" class="bank-heading" colspan="2" 
-                        style="padding-bottom:5px;border-bottom:2px #EE0606 solid;" valign="bottom" 
-                        width="65%">
-                        About us</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td bgcolor="#FFFFFF" class="content" colspan="2" valign="bottom">
-                        &nbsp;</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td align="left">
-                        Employtimes provides the perfect platform for the young candidates to seize the 
-                        best job opportunity suiting their backgrounds by screening them the tonnes of 
-                        available Job opportunities. The platform is provided for candidates from 
-                        backgrounds like Accounts/Finance, IT/ITES, Pharmaceuticals, Marketing, 
-                        Manufacturing and many other sectors.</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td bgcolor="#FFFFFF" class="content" colspan="2" valign="bottom">
-                        &nbsp;</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td align="left">
-                        Employtimes comprises of HR professionals who hold rich experience in the field 
-                        of consultation. Apart from Job openings, the candidates are provided with 
-                        various other information like Bank exam schedule, Latest walk-in, government 
-                        job,etc. Some interactive features like Dream company messenger,Resume services, 
-                        Job mailers,etc are provided to keep the candidates updated every moment.</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td align="left" class="content">
-                        &nbsp;</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td align="left">
-                        More and more features and innovations are under way with our penchant for 
-                        cutting-edge technologies and continuous effort to give the highest level of 
-                        service.</td>
-                </tr>
-                <tr bgcolor="#FFFFFF">
-                    <td bgcolor="#FFFFFF" class="content" colspan="2" valign="bottom">
-                        &nbsp;</td>
-                </tr>
-            </table>
-        </div>
-</div>
+<section>
+
+  
+  <article>
+    <p>
+   <b><font color="#1AB188">E-RECRUITER</font></b> is the most popular recruitment management platform. Its used every day by thousands of recruiters for sourcing job applications.
+   Helps to contacting candidates and cooperating with the business from a single place.
+   This system also helps manage the candidates’ consent clauses and address the new rights of candidates.Employtimes provides the perfect
+   platform for the young candidates to seize the best job opportunity suiting their backgrounds by screening them the tonnes of 
+   available Job opportunities. The platform is provided for candidates from backgrounds like Accounts/Finance, IT/ITES, Pharmaceuticals, Marketing, 
+   Manufacturing and many other sectors.
+  </p>
+  <p>
+  Employtimes comprises of HR professionals who hold rich experience in the field of consultation. Apart from Job openings, 
+  the candidates are provided with various other information like Bank exam schedule, Latest walk-in, government job,etc. 
+  Some interactive features like Dream company messenger,Resume services,Job mailers,etc are provided to keep the candidates updated every moment.
+  </p>
+    
+  </article>
+</section>
+
 
 <footer>
     <div class="container">
@@ -400,15 +407,15 @@
                 <form >                   
                 <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
                 <asp:Button ID="Button7" runat="server" Text="Subscribe" 
-                Width="100px" OnClick="Button7_click" BackColor="#99CC00" 
+                Width="100px" OnClick="Button7_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" Height="33px" />
                 </form>
             </div>
           
             <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                <h4 style="color:#99CC00;">Need Help?</h4>
+                <h4 style="color:#1AB188;">Need Help?</h4>
                 <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
             </div>
         </div>
     </div>

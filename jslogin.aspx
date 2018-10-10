@@ -402,15 +402,15 @@
                 <form >                   
                 <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
                 <asp:Button ID="Button7" runat="server" Text="Subscribe" 
-                Width="100px" OnClick="Button7_click" BackColor="#99CC00" 
+                Width="100px" OnClick="Button7_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" Height="33px" />
                 </form>
             </div>
           
             <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                <h4 style="color:#99CC00;">Need Help?</h4>
+                <h4 style="color:#1AB188;">Need Help?</h4>
                 <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
             </div>
         </div>
     </div>

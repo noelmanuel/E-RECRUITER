@@ -51,6 +51,7 @@
             height:60px;
             top: 0;
             left: 0;
+            border-bottom: 3px solid #fffdc0;
         }
         
         .firstbox2
@@ -198,6 +199,35 @@
             position:absolute;
             margin-top:-40%;
          }
+         
+         body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:#1AB188;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 97.5%;
+    background-color: #ffff;
+    height: 320px;
+    font-size: 20px;
+   
+}
+
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
         footer 
         {
             background: #3c3d41;
@@ -339,7 +369,18 @@
 
 
 
-<div style=" width:100%; height:580px;">
+<header>
+  <h2>CONTACT US</h2>
+</header>
+
+<section>
+
+  
+  <article>
+    
+    
+  </article>
+</section>
 
 
 
@@ -353,15 +394,15 @@
                 <form >                   
                 <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
                 <asp:Button ID="Button7" runat="server" Text="Subscribe" 
-                Width="100px" OnClick="Button7_click" BackColor="#99CC00" 
+                Width="100px" OnClick="Button7_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" Height="33px" />
                 </form>
             </div>
           
             <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                <h4 style="color:#99CC00;">Need Help?</h4>
+                <h4 style="color:#1AB188;">Need Help?</h4>
                 <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
             </div>
         </div>
     </div>
