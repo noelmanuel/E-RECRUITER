@@ -17,32 +17,26 @@ public partial class about : System.Web.UI.Page
     {
 
     }
-    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("~/Default.aspx");
-    }
-    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("~/searchjob.aspx");
-    }
-    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("~/cs.aspx");
-    }
-    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("~/about.aspx");
-    }
-    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("~/contact.aspx");
-    }
-    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+  
+    protected void Button1_Click(object sender, EventArgs e)
     {
         Response.Redirect("~/jslogin.aspx");
     }
-    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/jsregn.aspx");
+        Response.Redirect("~/contact.aspx");
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/about.aspx");
+    }
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/notify.aspx");
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+
     }
 }
