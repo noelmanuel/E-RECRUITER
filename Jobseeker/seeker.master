@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="provider.master.cs" Inherits="Jobprovider_provider" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="seeker.master.cs" Inherits="Jobseeker_seeker" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -70,43 +70,50 @@
             background-color:#3c3d41;
             
         }
-        .fa {
-  padding: 5px;
-  font-size: 10px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+        .fa 
+        {
+            padding: 5px;
+            font-size: 10px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
      }
 
-.fa:hover {
-    opacity: 0.7;
-}
+        .fa:hover 
+        {
+            opacity: 0.7;
+        }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+        .fa-facebook 
+        {
+            background: #3B5998;
+            color: white;
+        }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+        .fa-twitter 
+        {
+            background: #55ACEE;
+            color: white;
+        }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
+        .fa-google 
+        {
+            background: #dd4b39;
+            color: white;
+        }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
-.mainbox2
+        .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-rss 
+        {
+            background: #ff6600;
+            color: white;
+        }
+        .mainbox2
         {
             width:100%;
             margin : 0;
@@ -143,7 +150,7 @@
         {
             margin:3%;
             }
-footer 
+        footer 
         {
             background: #3c3d41;
             position:absolute;
@@ -225,58 +232,52 @@ footer
         
         
     
-     <p style="margin-left:40%;">
-     
-        <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" 
-                 Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White" onclick="Button1_Click1" />
-        <asp:Button ID="Button2" runat="server" Text="ABOUT" Height="30px" 
-                 Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White"  onclick="Button2_Click" />
-        <asp:Button ID="Button3" runat="server" Text="CONTACT" Height="30px" 
-                 Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White"  onclick="Button3_Click" />
-        <asp:Button ID="Button4" runat="server" Text="SIGN OUT" Height="30px" 
-                 Width="100px" BackColor="#e51616" 
-                BorderStyle="None" ForeColor="White"  onclick="Button4_Click" />
+     <p style="margin-left:23%;">
+
+                <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button1_Click" />
+                <asp:Button ID="Button2" runat="server" Text="SERVICES" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button2_Click" />
+                <asp:Button ID="Button3" runat="server" Text="ABOUT" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button3_Click" />
+                <asp:Button ID="Button4" runat="server" Text="CONTACT" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button4_Click" />
+                <asp:Button ID="Button5" runat="server" Text="SIGN OUT" Height="30px" Width="100px" BackColor="#e51616" BorderStyle="None" ForeColor="White" onclick="Button5_Click" />
+            </p>
+        </div>
+    </div>
    
-   </p>
-    </div>
-    </div>
-    <div style="top: 271px; left: 260px; position: absolute; height: 74px; width: 1014px">
+
+    
+     
+        <div style="top: 271px; left: 260px; position: absolute; height: 74px; width: 1014px">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-    </div>
-    <div style=" position: absolute; height: 460px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
-        <asp:Button ID="Button5" runat="server" Text="POST JOBS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button5_Click" />
-        <br />
-        <asp:Button ID="Button6" runat="server" Text="POST VACANCY" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button6_Click" />
-        <br />
-        <asp:Button ID="Button7" runat="server" Text="INTERVIEW" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button7_Click" />
-        <br />
-        <asp:Button ID="Button8" runat="server" Text="FINAL LIST" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button8_Click" />
-        <br />
-        <asp:Button ID="Button9" runat="server" Text="EDIT PROFILE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button9_Click" />
-        <br />
-        <asp:Button ID="Button10" runat="server" Text="PASSWORD CHANGE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button10_Click" />
-        <br />
-        <asp:Button ID="Button11" runat="server" Text="MESSAGES" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" 
-            onclick="Button11_Click" />
-    </div>
-    <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px">
-        <br />
-        <span class="style1">Welcome </span>
-        <asp:Label ID="lb1" runat="server"></asp:Label>
-    </div>
+            
+        </div>
+        <div style=" position: absolute; height: 460px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
+            <asp:Button ID="Button6" runat="server" Text="NOTIFICATIONS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button6_Click" />
+            <br />
+            <asp:Button ID="Button7" runat="server" Text="EXAM SCHEDULE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button7_Click" />
+            <br />
+            <asp:Button ID="Button8" runat="server" Text="ONLINE EXAM" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button8_Click" />
+            <br />
+            <asp:Button ID="Button9" runat="server" Text="SHORT LIST" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button9_Click" />
+            <br />
+            <asp:Button ID="Button10" runat="server" Text="RESULTS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button10_Click" />
+            <br />
+            <asp:Button ID="Button11" runat="server" Text="MESSAGES" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button11_Click" />
+            <br />
+            <asp:Button ID="Button12" runat="server" Text="CHANGE PASSWORD" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button12_Click" />
+            <br />
+            <br />
+        </div>
+
+        <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px">
+            <br />
+            <span class="style1">Welcome </span>
+            <asp:Label ID="lb1" runat="server"></asp:Label>
+        </div>
     </form>
- <footer>
+    
+
+    <footer>
     <div class="container">
     <div>
 
@@ -287,7 +288,8 @@ footer
                 <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
             </div>
         </div>
-    
+    </div>
 </footer>
 </body>
 </html>
+

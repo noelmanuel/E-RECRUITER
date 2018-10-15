@@ -1,12 +1,13 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="jslogin.aspx.cs" Inherits="jslogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Jsregn.aspx.cs" Inherits="Jobseeker_Jsregn" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
 <title>E-RECRUITER</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link href="login-box.css" rel="stylesheet" type="text/css" />
+    <link href="../login-box.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
        
        body
@@ -51,6 +52,7 @@
             height:60px;
             top: 0;
             left: 0;
+            border-bottom: 1px solid #faefbe;
         }
         
         .firstbox2
@@ -261,132 +263,65 @@
         }
         
        
-</style>
-</head>
+        </style>
+    </head>
 <body>
-<div class="mainbox1" >
 
-    <form id="form1" runat="server">
-    
-    <div class="firstbox">
-    
-        <p style="margin-left:17%; margin-top:5px; color:white; height: 15px; width: 509px;"><i style="color:white; margin-left:10%;
-   color:white;"class="fa fa-phone"></i>&nbsp 0471 2434343<i style="color:white;
-      margin-left:10%; color:white;"class="fa fa-television"></i>&nbsp Contact us:erecruiter@gmail.com</p>
-        
-        
+    <div class="mainbox1" >
+        <form id="form1" runat="server">
+
+        <div class="firstbox">
+            <p style="margin-left:17%; margin-top:5px; color:white; height: 15px; width: 509px;"><i style="color:white; margin-left:10%;color:white;"class="fa fa-phone"></i>&nbsp 0471 2434343<i style="color:white;
+             margin-left:10%; color:white;"class="fa fa-television"></i>&nbsp Contact us:erecruiter@gmail.com</p>
         </div>
+
         <div class="secondbox">
-        <p style="margin-left:70%; margin-top:4px; height: 17px; width: 204px;">
-        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/" class="fa fa-twitter"></a>
-        <a href="https://www.google.co.in/" class="fa fa-google"></a>
-        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-        <a href="https://rss.com/" class="fa fa-rss"></a>
-        </p>
-    
-     
+            <p style="margin-left:70%; margin-top:4px; height: 17px; width: 204px;">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.google.co.in/" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a href="https://rss.com/" class="fa fa-rss"></a>
+            </p>
         </div>
+    </div>
+
+    <div class="mainbox2" >
+        
+        <div class="firstbox2">
+             <img src="../images/logo1.jpg" style=" margin-left:30%; margin-top:20px;" />
         </div>
 
-<div class="mainbox2" >
-    
-    
-    <div class="firstbox2">
-    
-         
-        
-        
-        <img src="images/logo1.jpg" style=" margin-left:30%; margin-top:20px;" /></div>
         <div class="secondbox2">
-        
-        
-    
-     <p style="margin-left:9%;">
+
+            <p style="margin-left:9%;">
      
-            
-        <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
+                <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
                 Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button2" runat="server" Height="30px" Text="CONTACT" 
+                <asp:Button ID="Button2" runat="server" Height="30px" Text="CONTACT" 
                 Width="100px" OnClick="Button2_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button3" runat="server" Height="30px" Text="ABOUT" 
+                <asp:Button ID="Button3" runat="server" Height="30px" Text="ABOUT" 
                 Width="100px" OnClick="Button3_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
+                <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
                 Width="130px" OnClick="Button3_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
 
-        <div style=" margin-left:70%; margin-top:-45px;">
-            <div class="dropdown">
-            <asp:Button ID="Button4" runat="server" Height="30px" Text="REGISTER" 
-                Width="130px" OnClick="Button4_click" BackColor="Red" 
-                BorderStyle="None" ForeColor="White"   />
-                <div class="dropdown-content">
-                <a href="Company/companyregn.aspx">JOB PROVIDER</a>
-                <a href="JobSeeker/jsregn.aspx">JOB SEEKER</a>
+            </p>
+        </div>
+     </div>
+
+
+     <div style="width:100%;height:600px;background-color:Blue;">
         
-                </div>
-                </div>
-                </div>
-        
-        </p>
     
      
-        </div>
-        </div>
+     </div>
 
 
 
-<div style=" width:100%; height:580px;">
-<img src="images/ggg.jpg" height="600px" width="100%">
-<asp:Panel ID="Panel1" runat="server" defaultbutton="Button5" Height="16px" 
-        CssClass="pan">
-<div style="padding: 100px 0 0 250px; height: 1px; width: 117px; margin-top: 0px;">
-<div id="login-box">
-
-<H2>LOGIN</H2>
-<br />
-    <table class="style1">
-        <tr>
-            <td style="font-weight: 700; font-size: medium; " class="style6">
-                <h4 >USERNAME</t4>
-                        <td class="style6">
-                            <asp:TextBox ID="txtuname" runat="server" Width="200px" Height="30px" 
-                                CssClass="style7"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="style3">
-                            <h4>PASSWORD</h4></td>
-                        <td>
-                            <asp:TextBox ID="txtpass" runat="server"  Width="200px" Height="30px" TextMode="Password" CssClass="style7"></asp:TextBox>
-                            
-                        </td>
-                    </tr>
-                </table>
-<br />
-            <asp:Label ID="Label1" runat="server" EnableViewState="False" 
-                style="color: #343843; color:Red;"></asp:Label>
-                
-<asp:Button ID="Button5" runat="server" Text="LOGIN" Width="100px" Height="50px" OnClick="Button5_Click"  CssClass="style8" />
-
-    <br />
-<br />
-
-                <asp:HyperLink ID="HyperLink1" runat="server">Forgot Password?</asp:HyperLink>
-                <br />
-
-                
- </asp:Panel >
-
-</div>
-
-</div>
-
-
-</div>
 
 <footer>
     <div class="container">
@@ -404,7 +339,7 @@
             <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
                 <h4 style="color:#1AB188;">Need Help?</h4>
                 <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+                <a href="../contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
             </div>
         </div>
     </div>
