@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Jobprovider/provider.master.cs" Inherits="Jobprovider_provider" %>
+=======
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="cmpmaster.master.cs" Inherits="Company_cmpmaster" %>
+>>>>>>> 40b9f16c53268ade2a8deb4ccf8eb6f904dc23e2
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
