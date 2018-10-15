@@ -13,7 +13,7 @@
         {
             padding: 0;
             margin: 0;
-            height: 903px;
+            height: 745px;
         }
         .mainbox1
         {
@@ -83,33 +83,40 @@
             margin: 5px 2px;
         }
 
-.fa:hover {
-    opacity: 0.7;
-}
+            .fa:hover
+        {
+            opacity: 0.7;
+            
+        }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+            .fa-facebook 
+        {
+            background: #3B5998;
+            color: white;
+        }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+            .fa-twitter 
+        {
+            background: #55ACEE;
+            color: white;
+        }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
+            .fa-google 
+        {
+             background: #dd4b39;
+             color: white;
+        }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
+           .fa-linkedin 
+        {
+            background: #007bb5;
+            color: white;
+        }
+            .fa-rss     
+        {
+           background: #ff6600;
+            color: white;
+        }
         .style1
         {
             width: 98%;
@@ -124,32 +131,44 @@
                 
         
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+        .dropdown 
+        {
+             position: relative;
+            display: inline-block;
+        }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+        .dropdown-content 
+        {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+        .dropdown-content a 
+        {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-.dropdown-content a:hover {background-color: #ddd;}
+        .dropdown-content a:hover 
+        {
+            background-color: #ddd;
+        }
 
-.dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropdown-content 
+        {
+            display: block;
+         }
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+        .dropdown:hover .dropbtn 
+        {
+            background-color: #3e8e41;
+         }
         
        
         .style6
@@ -168,14 +187,81 @@
         {
             margin-left:66%;
             border:none;
-            background-color:#99CC00;
+            background-color:#1AB188;
             color:White;
             
             
         }
         
+        .pan
+        {
+            position:absolute;
+            margin-top:-40%;
+         }
+        footer 
+        {
+            background: #3c3d41;
+            position:absolute;
+            width: 100%;
+            padding: 2px 0;
+            bottom: 0px;
+  
+   
+        }
+
+        .container 
+        {
+            width: 1360px;
+            margin: auto;
+            height:60px;
+        }
+
+        .row 
+        {
+            width: 100%;
+            margin: auto;
+            position: relative;
+        }
+        .col-3 
+        {
+            width: 33%;
+            display: inline-block;
+            float: left;
+        }
+       footer .section-subscribe input[type="email"]
+         {
+            padding: 8px 15px;
+            
+        }
+       footer .section-subscribe input[type="submit"]
+         {
+            background: #1AB188;
+            padding: 9px 15px;
+            margin-left: 15px;
+            border: 0;
+            color: #fff;
+            font-weight: 800;
+        }
+        
+        
+        footer .section-help 
+        {
+            text-align: right;
+            color: #fff;
+        }
+
+        footer .section-help a 
+        {
+            background: #1AB188;
+            padding: 4px 15px;
+            text-align: left;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        
        
-    </style>
+</style>
 </head>
 <body>
 <div class="mainbox1" >
@@ -184,17 +270,19 @@
     
     <div class="firstbox">
     
-        <p style="margin-left:17%; margin-top:5px; color:white; height: 15px; width: 509px;"><i style="color:white; margin-left:10%; color:white;"class="fa fa-phone"></i>&nbsp 0471 2434343<i style="color:white; margin-left:10%; color:white;"class="fa fa-television"></i>&nbsp Contact us:nonu@email.com</p>
+        <p style="margin-left:17%; margin-top:5px; color:white; height: 15px; width: 509px;"><i style="color:white; margin-left:10%;
+   color:white;"class="fa fa-phone"></i>&nbsp 0471 2434343<i style="color:white;
+      margin-left:10%; color:white;"class="fa fa-television"></i>&nbsp Contact us:erecruiter@gmail.com</p>
         
         
         </div>
         <div class="secondbox">
         <p style="margin-left:70%; margin-top:4px; height: 17px; width: 204px;">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-rss"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.google.co.in/" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https://rss.com/" class="fa fa-rss"></a>
         </p>
     
      
@@ -209,30 +297,35 @@
          
         
         
-        <img src="images/logo.jpg" style=" margin-left:30%; margin-top:20px;" /></div>
+        <img src="images/logo1.jpg" style=" margin-left:30%; margin-top:20px;" /></div>
         <div class="secondbox2">
         
         
     
-     <p style="margin-left:25%;">
+     <p style="margin-left:9%;">
+     
             
-            <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
-                Width="100px" OnClick="Button1_click" BackColor="#99CC00" 
+        <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
+                Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
             <asp:Button ID="Button2" runat="server" Height="30px" Text="CONTACT" 
-                Width="100px" OnClick="Button2_click" BackColor="#99CC00" 
+                Width="100px" OnClick="Button2_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
             <asp:Button ID="Button3" runat="server" Height="30px" Text="ABOUT" 
-                Width="100px" OnClick="Button3_click" BackColor="#99CC00" 
+                Width="100px" OnClick="Button3_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
-        <div style=" margin-left:65%; margin-top:-45px;">
+            <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
+                Width="130px" OnClick="Button3_click" BackColor="#1AB188" 
+                BorderStyle="None" ForeColor="White" />
+
+        <div style=" margin-left:70%; margin-top:-45px;">
             <div class="dropdown">
             <asp:Button ID="Button4" runat="server" Height="30px" Text="REGISTER" 
-                Width="100px" OnClick="Button4_click" BackColor="Red" 
+                Width="130px" OnClick="Button4_click" BackColor="Red" 
                 BorderStyle="None" ForeColor="White"   />
                 <div class="dropdown-content">
-                <a href="searchjob.aspx">JOB PROVIDER</a>
-                <a href="searchjob.aspx">JOB SEEKER</a>
+                <a href="Company/companyregn.aspx">JOB PROVIDER</a>
+                <a href="JobSeeker/jsregn.aspx">JOB SEEKER</a>
         
                 </div>
                 </div>
@@ -246,10 +339,11 @@
 
 
 
-<div style=" width:100%; height:800px;">
-<img src="images/ggg.jpg" height="800px" width="100%">
-<asp:Panel ID="Panel1" runat="server" defaultbutton="Button5">
-<div style="padding: 100px 0 0 250px; height: 0px; width: 1px;">
+<div style=" width:100%; height:580px;">
+<img src="images/ggg.jpg" height="600px" width="100%">
+<asp:Panel ID="Panel1" runat="server" defaultbutton="Button5" Height="16px" 
+        CssClass="pan">
+<div style="padding: 100px 0 0 250px; height: 1px; width: 117px; margin-top: 0px;">
 <div id="login-box">
 
 <H2>LOGIN</H2>
@@ -291,6 +385,7 @@
 
 
 
+    </asp:Panel >
 
 </div>
 
@@ -298,23 +393,28 @@
 
 
 </div>
-</asp:Panel >
+
+<footer>
+    <div class="container">
+
+        <div >
+            <div style=" margin-top:1%;">
+                <form >                   
+                <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
+                <asp:Button ID="Button7" runat="server" Text="Subscribe" 
+                Width="100px" OnClick="Button7_click" BackColor="#1AB188" 
+                BorderStyle="None" ForeColor="White" Height="33px" />
+                </form>
+            </div>
+          
+            <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
+                <h4 style="color:#1AB188;">Need Help?</h4>
+                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
+                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </form>
-
-
-
-
-<div style="height: 200px; width:100%; background-color:#343843;">
-
-</div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>

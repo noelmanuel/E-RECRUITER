@@ -56,7 +56,7 @@ public partial class jslogin : System.Web.UI.Page
                 {
                     String st = rdr.GetString(0);
                     if (st == "approved")
-                        Response.Redirect("~/Company/cmphome.aspx");
+                        Response.Redirect("~/Jobprovider/provider.aspx");
                 }
             }
             else
@@ -84,7 +84,11 @@ public partial class jslogin : System.Web.UI.Page
     }
     protected void Button4_click(object sender, EventArgs e)
     {
-        
+        Response.Redirect("~/about.aspx");
     }
-    
+
+    protected void Button7_click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/about.aspx");
+    }
 }

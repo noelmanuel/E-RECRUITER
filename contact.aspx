@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="about.aspx.cs" Inherits="about" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="contact" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -199,11 +199,8 @@
             position:absolute;
             margin-top:-40%;
          }
-         {
-    box-sizing: border-box;
-}
-
-body {
+         
+         body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -231,8 +228,6 @@ section:after {
     display: table;
     clear: both;
 }
-
-        
         footer 
         {
             background: #3c3d41;
@@ -373,31 +368,23 @@ section:after {
         </div>
 
 
+
 <header>
-  <h2>ABOUT US</h2>
+  <h2>CONTACT US</h2>
 </header>
 
 <section>
 
   
   <article>
-    <p>
-   <b><font color="#1AB188">E-RECRUITER</font></b> is the most popular recruitment management platform. Its used every day by thousands of recruiters for sourcing job applications.
-   Helps to contacting candidates and cooperating with the business from a single place.
-   This system also helps manage the candidates’ consent clauses and address the new rights of candidates.Employtimes provides the perfect
-   platform for the young candidates to seize the best job opportunity suiting their backgrounds by screening them the tonnes of 
-   available Job opportunities. The platform is provided for candidates from backgrounds like Accounts/Finance, IT/ITES, Pharmaceuticals, Marketing, 
-   Manufacturing and many other sectors.
-  </p>
-  <p>
-  Employtimes comprises of HR professionals who hold rich experience in the field of consultation. Apart from Job openings, 
-  the candidates are provided with various other information like Bank exam schedule, Latest walk-in, government job,etc. 
-  Some interactive features like Dream company messenger,Resume services,Job mailers,etc are provided to keep the candidates updated every moment.
-  </p>
+    
     
   </article>
 </section>
 
+
+
+</div>
 
 <footer>
     <div class="container">

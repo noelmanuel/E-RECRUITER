@@ -6,8 +6,8 @@
 	color: #343843;
 	font: 12px Arial, Helvetica, sans-serif;
 	background: url(images/loginbox.jpg) no-repeat left top;
-	top: 243px;
-	left: 150px;
+	top: 100px;
+	left: 100px;
 	position: absolute;
 	border-radius: 15px;
 }
