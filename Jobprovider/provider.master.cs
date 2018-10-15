@@ -11,11 +11,9 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
 
-<<<<<<< HEAD
+
 public partial class Jobprovider_provider : System.Web.UI.MasterPage
-=======
-public partial class Company_cmpmaster : System.Web.UI.MasterPage
->>>>>>> 40b9f16c53268ade2a8deb4ccf8eb6f904dc23e2
+
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -24,11 +22,9 @@ public partial class Company_cmpmaster : System.Web.UI.MasterPage
 
     protected void Button1_Click1(object sender, EventArgs e)
     {
-<<<<<<< HEAD
+
         Response.Redirect("~/Jobprovider/provider.aspx");
-=======
-        Response.Redirect("~/Company/cmphome.aspx");
->>>>>>> 40b9f16c53268ade2a8deb4ccf8eb6f904dc23e2
+
     }
     protected void Button2_Click(object sender, EventArgs e)
     {

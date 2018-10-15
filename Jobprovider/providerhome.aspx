@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-﻿<%@ Page Language="C#" MasterPageFile="~/Jobprovider/provider.master" AutoEventWireup="true" CodeFile="providerhome.aspx.cs" Inherits="Jobprovider_providerhome" Title="Untitled Page" %>
-=======
-﻿<%@ Page Language="C#" MasterPageFile="~/Company/cmpmaster.master" AutoEventWireup="true" CodeFile="cmphome.aspx.cs" Inherits="Company_cmphome" Title="Untitled Page" %>
->>>>>>> 40b9f16c53268ade2a8deb4ccf8eb6f904dc23e2
+<%@ Page Language="C#" MasterPageFile="~/Jobprovider/provider.master" AutoEventWireup="true" CodeFile="providerhome.aspx.cs" Inherits="Jobprovider_providerhome" Title="Untitled Page" %>
+
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
