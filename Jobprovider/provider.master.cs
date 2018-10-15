@@ -11,7 +11,9 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
 
-public partial class Company_cmpmaster : System.Web.UI.MasterPage
+
+public partial class Jobprovider_provider : System.Web.UI.MasterPage
+
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -20,15 +22,17 @@ public partial class Company_cmpmaster : System.Web.UI.MasterPage
 
     protected void Button1_Click1(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/cmphome.aspx");
+
+        Response.Redirect("~/Jobprovider/providerhome.aspx");
+
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/about.aspx");
+        Response.Redirect("~/about.aspx");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/contact.aspx");
+        Response.Redirect("~/contact.aspx");
     }
     protected void Button4_Click(object sender, EventArgs e)
     {
@@ -36,34 +40,34 @@ public partial class Company_cmpmaster : System.Web.UI.MasterPage
     }
     protected void Button5_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/addjob.aspx");
+        Response.Redirect("~/Jobprovider/addjob.aspx");
     }
     protected void Button6_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/addvacancy.aspx");
+        Response.Redirect("~/Jobprovider/addvacancy.aspx");
     }
     protected void Button7_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/interviewsch.aspx");
+        Response.Redirect("~/Jobprovider/interviewsch.aspx");
     }
     protected void Button8_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/finallist.aspx");
+        Response.Redirect("~/Jobprovider/finallist.aspx");
     }
     protected void Button9_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/Communication.aspx");
+        Response.Redirect("~/Jobprovider/Communication.aspx");
     }
     protected void Button10_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/passchange.aspx");
+        Response.Redirect("~/Jobprovider/passchange.aspx");
     }
     protected void Button11_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/sendinterview.aspx");
+        Response.Redirect("~/Jobprovider/sendinterview.aspx");
     }
     protected void Button12_click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Company/Communication.aspx");
+        Response.Redirect("~/Jobprovider/Communication.aspx");
     }
 }
