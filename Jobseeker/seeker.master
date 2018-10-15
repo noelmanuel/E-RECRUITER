@@ -122,11 +122,9 @@
             top: 0;
             left: 0;
             
-            
-            
-            }
+          }
         
-        .firstbox2
+         .firstbox2
         {
             width:50%;
             height:60px;
@@ -198,7 +196,9 @@
             margin-left: 10px;
         }
     
-    </style>
+    </style> 
+            
+        
 </head>
 <body>
 <div class="mainbox1" >

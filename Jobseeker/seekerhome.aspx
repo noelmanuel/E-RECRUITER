@@ -9,6 +9,5 @@
     <asp:Image ID="Image1" runat="server" ImageUrl="~/images/job.jpg" 
         Height="592px" Width="1323px" />
         </div>
-
 </asp:Content>
 
