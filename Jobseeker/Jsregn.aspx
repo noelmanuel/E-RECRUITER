@@ -15,6 +15,7 @@
             padding: 0;
             margin: 0;
             height: 745px;
+            
         }
         .mainbox1
         {
@@ -259,7 +260,7 @@
             text-align: left;
             color: #fff;
             text-decoration: none;
-            margin-left: 10px;
+            margin-left: 9px;
         }
         
        

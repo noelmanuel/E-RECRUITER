@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <title>E-RECRUITER</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="login-box.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
@@ -378,8 +379,14 @@
                 <asp:HyperLink ID="HyperLink1" runat="server">Forgot Password?</asp:HyperLink>
                 <br />
 
-                
- </asp:Panel >
+                <asp:HyperLink ID="HyperLink2" runat="server" 
+                NavigateUrl="~/JobSeeker/jsregn.aspx" style="color: #343843">Sign Up</asp:HyperLink>
+
+
+
+
+
+    </asp:Panel >
 
 </div>
 
