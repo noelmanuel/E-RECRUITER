@@ -330,7 +330,7 @@
                ForeColor="Red"></asp:RequiredFieldValidator>
            </br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" TextMode="Date" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" type="Date" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox6" ForeColor="Red" ErrorMessage="Enter Date Of Birth"></asp:RequiredFieldValidator>
 
            <h5 style="color:#1ab188;  margin-left:1%;">Gender:</h5><div style=" position:absolute; margin-top:-50px; margin-left:5%;">
@@ -348,22 +348,22 @@
            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="TextBox1" ForeColor="Red" runat="server" ErrorMessage="Enter Your Address"></asp:RequiredFieldValidator>
          </br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-id-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" TextMode="Number" placeholder="Adhaar No" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-id-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" type="Number" placeholder="Adhaar No" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox7" ForeColor="Red" ErrorMessage="Enter your Adhaar No"></asp:RequiredFieldValidator>
            </br>
 
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" TextMode="Number" placeholder="Mobile" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" type="Number" placeholder="Mobile" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox8" ForeColor="Red" ErrorMessage="Enter Your Mobile No"></asp:RequiredFieldValidator>
            </br>
 
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-tty"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" TextMode="Number" placeholder="Landline" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-tty"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" type="Number" placeholder="Landline" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="TextBox9" ForeColor="Red" runat="server" ErrorMessage="Enter Landline No"></asp:RequiredFieldValidator>
            
            </br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" TextMode="Email" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" type="Email" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ForeColor="Red" ControlToValidate="TextBox10" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Enter Valid Email"></asp:RegularExpressionValidator>
        </fieldset>
        <asp:Button ID="Button4" runat="server" Text="REGISTER" CssClass="sub" BackColor="#FF1414" ForeColor="White" />
