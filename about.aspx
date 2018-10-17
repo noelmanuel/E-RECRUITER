@@ -326,12 +326,13 @@ footer .section-help a {
 
     <div class="row">
         <div class="column left">
-            <i class="fa fa-cog" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
+            <i class="fa fa-eye-slash" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
             <div class="header" style="color:#3c3d41; font-family:Sans-Serif">
-                <h2>SERVICES</h2></div>
+            <h2>VISION</h2></div>
             <div class="a">
-                <p><font color="#3c3d41">Access millions of dollars in fee-based jobs. Distribute your jobs to more than 2,000 sites. Get help filling your positions.
-   </font> </p>
+                <p><font color="#3c3d41">Our vision is more than just connecting job seekers, recruiters and employers. 
+    We are passionate about inspiring people to better themselves, to grab opportunities, and to believe in themselves.</font></p>
+                
             </div>
         </div>
         <div class="column middle">
@@ -343,12 +344,13 @@ footer .section-help a {
             </div>
         </div>
         <div class="column right">
-            <i class="fa fa-eye-slash" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
+            <i class="fa fa-cog" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
             <div class="header" style="color:#3c3d41; font-family:Sans-Serif">
-                <h2>VISION</h2></div>
+                
+            <h2>SERVICES</h2></div>
             <div class="a">
-                <p><font color="#3c3d41">Our purpose at Recruiter is more than just connecting job seekers, recruiters and employers. 
-    We are passionate about inspiring people to better themselves, to grab opportunities, and to believe in themselves.</font></p>
+                <p><font color="#3c3d41">Access millions of dollars in fee-based jobs. Distribute the job seeker details to employers. Get help filling your positions.
+   </font> </p>
             </div>
         </div>
     </div>
