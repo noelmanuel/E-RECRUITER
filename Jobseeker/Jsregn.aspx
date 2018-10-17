@@ -16,7 +16,6 @@
             padding: 0;
             margin: 0;
             height: 745px;
-            
         }
         .mainbox1
         {
@@ -228,7 +227,7 @@
             text-align: left;
             color: #fff;
             text-decoration: none;
-            margin-left: 9px;
+            margin-left: 10px;
         }
         .sub
         {
@@ -287,16 +286,16 @@
      
                 <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
                 Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White" CausesValidation="False" />
                 <asp:Button ID="Button2" runat="server" Height="30px" Text="CONTACT" 
                 Width="100px" OnClick="Button2_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White" CausesValidation="False" />
                 <asp:Button ID="Button3" runat="server" Height="30px" Text="ABOUT" 
                 Width="100px" OnClick="Button3_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White" CausesValidation="False" />
                 <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
                 Width="130px" OnClick="Button3_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White" CausesValidation="False" />
 
             </p>
         </div>
@@ -309,32 +308,63 @@
        <legend>Your Basic Info</legend></br>
            
            <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" placeholder="First Name" runat="server" 
-               CssClass="textbox"></asp:TextBox></br>
+               CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+               ErrorMessage="Enter Username" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator><asp:Label
+                   ID="lbluser" runat="server"></asp:Label></br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox2" placeholder="Password" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox2" TextMode="Password" placeholder="Password" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox2" ForeColor="Red" ErrorMessage="Enter Password"></asp:RequiredFieldValidator>
+           </br>
 
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cogs"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox3" placeholder="Confirm Password" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cogs"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox3" TextMode="Password" placeholder="Confirm Password" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:CompareValidator ID="CompareValidator1" ControlToCompare="TextBox2" 
+               ControlToValidate="TextBox3" runat="server" 
+               ErrorMessage="Password Not Matching" ForeColor="Red"></asp:CompareValidator>
+           </br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-user-circle"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox4" placeholder="Name" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-user-circle"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox4" placeholder="Name" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" 
+               ControlToValidate="TextBox4" runat="server" ErrorMessage="Enter your name" 
+               ForeColor="Red"></asp:RequiredFieldValidator>
+           </br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" TextMode="Date" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox6" ForeColor="Red" ErrorMessage="Enter Date Of Birth"></asp:RequiredFieldValidator>
 
            <h5 style="color:#1ab188;  margin-left:1%;">Gender:</h5><div style=" position:absolute; margin-top:-50px; margin-left:5%;">
            <asp:RadioButtonList ID="RadioButtonList1" runat="server">
            <asp:ListItem>Male</asp:ListItem>
            <asp:ListItem>Female</asp:ListItem>
-           </asp:RadioButtonList></div>
+           </asp:RadioButtonList></div></br>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ForeColor="Red" ControlToValidate="RadioButtonList1" runat="server" ErrorMessage="Gender Required"></asp:RequiredFieldValidator>
        </fieldset>
        
        <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
        <legend>Communication Info</legend></br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" placeholder="Address" runat="server" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-id-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" placeholder="Adhaar No" runat="server" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" placeholder="Mobile" runat="server" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-tty"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" placeholder="Landline" runat="server" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" placeholder="Address" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="TextBox1" ForeColor="Red" runat="server" ErrorMessage="Enter Your Address"></asp:RequiredFieldValidator>
+         </br>
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-id-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" TextMode="Number" placeholder="Adhaar No" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox7" ForeColor="Red" ErrorMessage="Enter your Adhaar No"></asp:RequiredFieldValidator>
+           </br>
+
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" TextMode="Number" placeholder="Mobile" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox8" ForeColor="Red" ErrorMessage="Enter Your Mobile No"></asp:RequiredFieldValidator>
+           </br>
+
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-tty"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" TextMode="Number" placeholder="Landline" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="TextBox9" ForeColor="Red" runat="server" ErrorMessage="Enter Landline No"></asp:RequiredFieldValidator>
+           
+           </br>
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" TextMode="Email" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
+           <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ForeColor="Red" ControlToValidate="TextBox10" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Enter Valid Email"></asp:RegularExpressionValidator>
        </fieldset>
        <asp:Button ID="Button4" runat="server" Text="REGISTER" CssClass="sub" BackColor="#FF1414" ForeColor="White" />
          <asp:Button ID="Button5" runat="server" Text="CLEAR" CssClass="cle" 
