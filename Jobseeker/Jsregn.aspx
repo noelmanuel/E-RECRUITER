@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="../login-box.css" rel="stylesheet" type="text/css" />
+    <link href="textbox.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
        
        body
@@ -119,18 +120,7 @@
            background: #ff6600;
             color: white;
         }
-        .style1
-        {
-            width: 98%;
-            height: 65px;
-            margin-left: 0px;
-        }
-        .style3
-        {
-            width: 110px;
-            font-size: medium;
-        }
-                
+                        
         
 
         .dropdown 
@@ -173,28 +163,6 @@
          }
         
        
-        .style6
-        {
-            border-radius: 5px;
-            
-            
-        }
-         .style7
-        {
-            color:#343843;
-            
-            
-        }
-         .style8
-        {
-            margin-left:66%;
-            border:none;
-            background-color:#1AB188;
-            color:White;
-            
-            
-        }
-        
         .pan
         {
             position:absolute;
@@ -215,7 +183,7 @@
         {
             width: 1360px;
             margin: auto;
-            height:60px;
+            height:40px;
         }
 
         .row 
@@ -261,6 +229,26 @@
             text-decoration: none;
             margin-left: 10px;
         }
+        .sub
+        {
+            position:absolute;
+            margin-left:81.5%;
+            margin-top:-4%;
+            height:50px;
+            width:200px;
+            border:none;
+            
+            }
+          .cle
+        {
+            position:absolute;
+            margin-left:74%;
+            margin-top:-4%;
+            height:50px;
+            width:110px;
+            border:none;
+            
+            }
         
        
         </style>
@@ -314,10 +302,44 @@
      </div>
 
 
-     <div style="width:100%;height:600px;background-color:Blue;">
-        
-    
-     
+     <div style="width:100%;height:600px;background-color:White; display:inline-block;">
+       <form>
+       <fieldset style=" width:40%; height:86%; margin-left:130px; margin-top:2%;">
+       <legend>Your Basic Info</legend></br>
+           
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" placeholder="First Name" runat="server" 
+               CssClass="textbox"></asp:TextBox></br>
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox2" placeholder="Password" runat="server" CssClass="textbox"></asp:TextBox></br>
+
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cogs"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox3" placeholder="Confirm Password" runat="server" CssClass="textbox"></asp:TextBox></br>
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-user-circle"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox4" placeholder="Name" runat="server" CssClass="textbox"></asp:TextBox></br>
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
+
+           <h5 style="color:#1ab188;  margin-left:1%;">Gender:</h5><div style=" position:absolute; margin-top:-50px; margin-left:5%;">
+           <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+           <asp:ListItem>Male</asp:ListItem>
+           <asp:ListItem>Female</asp:ListItem>
+           </asp:RadioButtonList></div>
+       </fieldset>
+       
+       <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
+       <legend>Communication Info</legend></br>
+
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" placeholder="Address" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-id-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" placeholder="Adhaar No" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" placeholder="Mobile" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-tty"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" placeholder="Landline" runat="server" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
+       </fieldset>
+       <asp:Button ID="Button4" runat="server" Text="REGISTER" CssClass="sub" BackColor="#FF1414" ForeColor="White" />
+         <asp:Button ID="Button5" runat="server" Text="CLEAR" CssClass="cle" 
+           BackColor="#1ab188" ForeColor="White" />
+       </form> 
+         
      </div>
 
 
@@ -326,22 +348,7 @@
 <footer>
     <div class="container">
 
-        <div >
-            <div style=" margin-top:1%;">
-                <form >                   
-                <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
-                <asp:Button ID="Button7" runat="server" Text="Subscribe" 
-                Width="100px" OnClick="Button7_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" Height="33px" />
-                </form>
-            </div>
-          
-            <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                <h4 style="color:#1AB188;">Need Help?</h4>
-                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="../contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
-            </div>
-        </div>
+        
     </div>
 </footer>
 </form>
