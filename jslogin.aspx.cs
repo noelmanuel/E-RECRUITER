@@ -35,14 +35,14 @@ public partial class jslogin : System.Web.UI.Page
             else if (utype == "job seeker")
             {
                 Session["juser"] = txtuname.Text;
-                str = "select status from jobseekerreg where usname='" + txtuname.Text + "'";
+                str = "select status from jobseekerregn where usname='" + txtuname.Text + "'";
 
                 rdr = obj.ReadData(str);
                 if (rdr.Read())
                 {
                     String st = rdr.GetString(0);
                     if (st == "approved")
-                        Response.Redirect("~/JobSeeker/jshome.aspx");
+                        Response.Redirect("~/JobSeeker/seekerhome.aspx");
                 }
 
             }
@@ -56,7 +56,7 @@ public partial class jslogin : System.Web.UI.Page
                 {
                     String st = rdr.GetString(0);
                     if (st == "approved")
-                        Response.Redirect("~/Jobprovider/provider.aspx");
+                        Response.Redirect("~/Jobprovider/providerhome.aspx");
                 }
             }
             else
@@ -84,7 +84,7 @@ public partial class jslogin : System.Web.UI.Page
     }
     protected void Button4_click(object sender, EventArgs e)
     {
-        Response.Redirect("~/about.aspx");
+        
     }
 
     protected void Button7_click(object sender, EventArgs e)
