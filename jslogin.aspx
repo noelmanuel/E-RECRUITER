@@ -22,8 +22,7 @@
             margin : 0;
             background-color:#3c3d41;
             height:40px;
-            top: 0;
-            left: 0;
+            
          }
         
         .firstbox
