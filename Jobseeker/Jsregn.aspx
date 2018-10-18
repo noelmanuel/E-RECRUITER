@@ -307,7 +307,7 @@
        <fieldset style=" width:40%; height:86%; margin-left:130px; margin-top:2%;">
        <legend>Your Basic Info</legend></br>
            
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" placeholder="First Name" runat="server" 
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" placeholder="UserName" runat="server" 
                CssClass="textbox"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                ErrorMessage="Enter Username" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator><asp:Label
@@ -330,7 +330,7 @@
                ForeColor="Red"></asp:RequiredFieldValidator>
            </br>
 
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" type="Date" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-cog"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" type="date" placeholder="Date Of Birth" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox6" ForeColor="Red" ErrorMessage="Enter Date Of Birth"></asp:RequiredFieldValidator>
 
            <h5 style="color:#1ab188;  margin-left:1%;">Gender:</h5><div style=" position:absolute; margin-top:-50px; margin-left:5%;">
@@ -366,9 +366,9 @@
            <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" type="Email" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ForeColor="Red" ControlToValidate="TextBox10" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Enter Valid Email"></asp:RegularExpressionValidator>
        </fieldset>
-       <asp:Button ID="Button4" runat="server" Text="REGISTER" CssClass="sub" BackColor="#FF1414" ForeColor="White" />
-         <asp:Button ID="Button5" runat="server" Text="CLEAR" CssClass="cle" 
-           BackColor="#1ab188" ForeColor="White" />
+       <asp:Button ID="Button4" runat="server"  Text="REGISTER" OnClick="btnsub" CssClass="sub" BackColor="#FF1414" ForeColor="White" />
+         <asp:Button ID="Button5" runat="server" Text="CLEAR" OnClick="reset" CssClass="cle" 
+           BackColor="#1ab188" ForeColor="White" CausesValidation="False" />
        </form> 
          
      </div>
