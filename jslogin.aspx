@@ -375,11 +375,10 @@
     <br />
 <br />
 
-                <asp:HyperLink ID="HyperLink1" runat="server">Forgot Password?</asp:HyperLink>
-                <br />
+                <a href="passwordreset.aspx" style="color:Black; text-decoration:none;">Forgot Password?</a>
+               
 
-                <asp:HyperLink ID="HyperLink2" runat="server" 
-                NavigateUrl="~/JobSeeker/jsregn.aspx" style="color: #343843">Sign Up</asp:HyperLink>
+                
 
 
 
