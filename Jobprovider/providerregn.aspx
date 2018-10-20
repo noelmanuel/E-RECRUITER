@@ -304,22 +304,22 @@
        <form>
        <fieldset style=" width:40%; height:86%; margin-left:130px; margin-top:2%;">
        <legend>Company Info</legend></br>
-           <asp:TextBox ID="TextBox1" runat="server" placeholder="Company Name" CssClass="textbox" ></asp:TextBox></br>
-           <asp:TextBox ID="TextBox2" runat="server" placeholder="Description" CssClass="textbox"></asp:TextBox></br>
-           <asp:TextBox ID="TextBox3" runat="server" placeholder="Communication Address" CssClass="textbox"></asp:TextBox></br>
-           <asp:TextBox ID="TextBox4" runat="server" placeholder="Place" CssClass="textbox"></asp:TextBox></br>
-           <asp:TextBox ID="TextBox5" runat="server" placeholder="Landline Number" CssClass="textbox"></asp:TextBox></br>
-           <asp:TextBox ID="TextBox6" runat="server" placeholder="Mobile Number" CssClass="textbox"></asp:TextBox></br>
-           <asp:TextBox ID="TextBox7" runat="server" placeholder="E-Mail" CssClass="textbox"></asp:TextBox></br>
-           <asp:TextBox ID="TextBox8" runat="server" placeholder="Website URL" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-building"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" runat="server" placeholder="Company Name" CssClass="textbox" ></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-sticky-note"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox2" runat="server" placeholder="Description" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox3" runat="server" placeholder="Communication Address" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-map-marker"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox4" runat="server" placeholder="Place" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-phone"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" runat="server" placeholder="Landline Number" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" runat="server" placeholder="Mobile Number" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-envelope"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" runat="server" placeholder="E-Mail" CssClass="textbox"></asp:TextBox></br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa  fa-globe"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" runat="server" placeholder="Website URL" CssClass="textbox"></asp:TextBox>
            </fieldset>
 
 
             <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
        <legend>Accounts Info</legend></br>
-                <asp:TextBox ID="TextBox9" runat="server" placeholder="Username" CssClass="textbox"></asp:TextBox></br>
-                <asp:TextBox ID="TextBox10" runat="server" TextMode="Password" placeholder="Password" CssClass="textbox"></asp:TextBox></br>
-                <asp:TextBox ID="TextBox11" runat="server" TextMode="Password" placeholder="Confirm Password" CssClass="textbox"></asp:TextBox>
+                <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" runat="server" placeholder="Username" CssClass="textbox"></asp:TextBox></br>
+                <span ><i style="color:#1ab188; height:55px;"class="fa fa-unlock-alt"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" runat="server" TextMode="Password" placeholder="Password" CssClass="textbox"></asp:TextBox></br>
+                <span ><i style="color:#1ab188; height:55px;"class="fa fa-lock"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox11" runat="server" TextMode="Password" placeholder="Confirm Password" CssClass="textbox"></asp:TextBox>
                 </fieldset>
 
        <asp:Button ID="Button4" runat="server" Text="Register" CssClass="sub" BackColor="#1ab188" ForeColor="White" />
