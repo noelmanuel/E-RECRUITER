@@ -6,10 +6,10 @@
 <head id="Head1" runat="server">
 <title>E-RECRUITER</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link href="login-box.css" rel="stylesheet" type="text/css" />
+    <link href="contact.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
        
-       body
+body
         {
             padding: 0;
             margin: 0;
@@ -21,8 +21,7 @@
             margin : 0;
             background-color:#3c3d41;
             height:40px;
-            top: 0;
-            left: 0;
+            
          }
         
         .firstbox
@@ -51,12 +50,12 @@
             height:60px;
             top: 0;
             left: 0;
-            border-bottom: 3px solid #fffdc0;
+            border-bottom:2px solid #fcedb0;
         }
         
         .firstbox2
         {
-            width:50%;
+            width:45%;
             height:60px;
             margin : 0;
             float : left ;
@@ -71,6 +70,7 @@
             margin : 0;
             float : left ;
             background-color:#fff;
+           
             
         }
             
@@ -201,35 +201,6 @@
             position:absolute;
             margin-top:-40%;
          }
-         
-         body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: #fff;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color:#1AB188;
-}
-
-article {
-    float: left;
-    padding: 20px;
-    width: 97.5%;
-    background-color: #ffff;
-    height: 320px;
-    font-size: 20px;
-   
-}
-
-
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
         footer 
         {
             background: #3c3d41;
@@ -245,7 +216,7 @@ section:after {
         {
             width: 1360px;
             margin: auto;
-            height:60px;
+            height:25px;
         }
 
         .row 
@@ -292,6 +263,32 @@ section:after {
             margin-left: 10px;
         }
         
+        .ali
+        {
+            background-color:#1ab188;
+            width:130px;
+            height:35px;
+            float:right;
+            text-align:center;
+            color:White;
+            
+            
+            margin-right:1%;
+            }
+            a.fill-div
+            {
+                display:block;
+                height:100%;
+                width:100%;
+                text-decoration:none;
+                text-align:center;
+                color:White;
+                margin-top:6px;
+                }
+         
+        
+        
+        
        
 </style>
 </head>
@@ -329,84 +326,53 @@ section:after {
          
         
         
-        <img src="images/logo1.jpg" style=" margin-left:30%; margin-top:20px;" /></div>
+        <img src="images/logo1.jpg" style=" margin-left:30%; margin-top:20px;" />
+        
+        </div>
+
         <div class="secondbox2">
         
         
     
-     <p style="margin-left:9%;">
+    
      
+     <p >
             
-        <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
-                Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button2" runat="server" Height="30px" Text="CONTACT" 
-                Width="100px" OnClick="Button2_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button3" runat="server" Height="30px" Text="ABOUT" 
-                Width="100px" OnClick="Button3_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
-                Width="130px" OnClick="Button3_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+        <div class="ali"><a href="notification.aspx" class="fill-div">NOTIFICATION</a></div>
+        <div class="ali"><a href="about.aspx" class="fill-div">ABOUT</a></div>
+        <div class="ali"><a href="jslogin.aspx" class="fill-div">HOME</a></div>
 
-        <div style=" margin-left:70%; margin-top:-45px;">
-            <div class="dropdown">
-            <asp:Button ID="Button4" runat="server" Height="30px" Text="REGISTER" 
-                Width="130px" OnClick="Button4_click" BackColor="Red" 
-                BorderStyle="None" ForeColor="White"   />
-                <div class="dropdown-content">
-                <a href="Company/companyregn.aspx">JOB PROVIDER</a>
-                <a href="JobSeeker/jsregn.aspx">JOB SEEKER</a>
         
-                </div>
-                </div>
-                </div>
         
-        </p>
-    
+    </p>
      
         </div>
         </div>
 
-
-
-<header>
-  <h2>CONTACT US</h2>
-</header>
-
-<section>
-
-  
-  <article>
-    
-    
-  </article>
-</section>
-
-
-
-</div>
+        
+        <div>
+        <img src="images/msg.jpg" height="75%" width="40%" style=" position:absolute;"></div>
+        <div style=" height:73%; width:50%; border:2px solid #1ab188; margin-left:40%; margin-top:1%;">
+           
+        
+        <h1 style="COLOR:#fead00; text-align:center;">GET IN TOUCH</h1></BR>
+        <p style=" margin-left:2%;">
+<form >
+  <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+  <label for="nme"><span>What's your name?</span></label></br>
+  <input type="text" name="name" class="question" id="Text1" required autocomplete="off" />
+  <label for="nme"><span>What's your email?</span></label>
+  <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+  <label for="msg"><span>What's your message?</span></label>
+  <input type="submit" value="Submit" />
+</form>
+</p>
+        </div>
+        
 
 <footer>
     <div class="container">
 
-        <div >
-            <div style=" margin-top:1%;">
-                <form >                   
-                <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
-                <asp:Button ID="Button7" runat="server" Text="Subscribe" 
-                Width="100px" OnClick="Button7_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" Height="33px" />
-                </form>
-            </div>
-          
-            <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                <h4 style="color:#1AB188;">Need Help?</h4>
-                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
-            </div>
-        </div>
     </div>
 </footer>
 </form>

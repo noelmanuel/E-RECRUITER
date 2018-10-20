@@ -220,7 +220,7 @@ footer {
 .container {
     width: 1360px;
     margin: auto;
-    height: 60px;
+    height: 30px;
 }
 
 .row {
@@ -261,6 +261,9 @@ footer .section-help a {
     text-decoration: none;
     margin-left: 10px;
 }
+h2
+{
+    color:#fead00;}
 
 </style>
 </head>
@@ -321,32 +324,31 @@ footer .section-help a {
 
     <header>
         <p>
-            <h1>ABOUT US</h1></p>
+            <h1>WHAT DRIVES US</h1></p>
         <p>
             <h4>Key Features Of Our Website</h4></p>
     </header>
 
     <div class="row">
         <div class="column left">
-            <i class="fa fa-eye-slash" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
+            <i class="fa fa-eye-slash" style="font-size:70px; text-align:center; padding:2px; padding-right:65px; color:#1AB188"> </i>
             <div class="header" style="color:#3c3d41; font-family:Sans-Serif">
             <h2>VISION</h2></div>
             <div class="a">
-                <p><font color="#3c3d41">Our vision is more than just connecting job seekers, recruiters and employers. 
-    We are passionate about inspiring people to better themselves, to grab opportunities, and to believe in themselves.</font></p>
+                <p><font color="#3c3d41">We are passionate about inspiring people to better themselves, to grab opportunities, and to believe in themselves.</font></p>
                 
             </div>
         </div>
         <div class="column middle">
-            <i class="fa fa-life-ring" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
+            <i class="fa fa-life-ring" style="font-size:70px; text-align:center; padding:4px; padding-right:65px; margin-top:1%; color:#1AB188"> </i>
             <div class="header" style="color:#3c3d41; font-family:Sans-Serif">
                 <h2>SUPPORT</h2></div>
-            <div class="a">
-                <p><font color="#3c3d41">Search thousands of Jobs. Stay on top of the market with Job Alerts. Send your CV to recruiters and employers.</font></p>
+            <div class="a" >
+                <p ><font color="#3c3d41">Search thousands of Jobs. Stay on top of the market with Job Alerts. Send your CV to recruiters and employers.</font></p>
             </div>
         </div>
         <div class="column right">
-            <i class="fa fa-cog" style="font-size:70px; text-align:center; padding:2px; padding-right:30px; color:#1AB188"> </i>
+            <i class="fa fa-cog" style="font-size:70px; text-align:center; padding:2px; padding-right:65px; color:#1AB188"> </i>
             <div class="header" style="color:#3c3d41; font-family:Sans-Serif">
                 
             <h2>SERVICES</h2></div>
@@ -360,20 +362,7 @@ footer .section-help a {
     <footer>
         <div class="container">
 
-            <div>
-                <div style=" margin-top:1%;">
-                    <form>
-                        <asp:TextBox ID="sub" runat="server" Height="27" Width="400" placeholder="  E-MAIL" Visible="True"></asp:TextBox>
-                        <asp:Button ID="Button7" runat="server" Text="Subscribe" Width="100px" OnClick="Button7_click" BackColor="#1AB188" BorderStyle="None" ForeColor="White" Height="33px" />
-                    </form>
-                </div>
-
-                <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                    <h4 style="color:#1AB188;">Need Help?</h4>
-                    <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                    <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
-                </div>
-            </div>
+            
         </div>
     </footer>
     </form>
