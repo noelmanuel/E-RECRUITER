@@ -304,22 +304,66 @@
        <form>
        <fieldset style=" width:40%; height:86%; margin-left:130px; margin-top:2%;">
        <legend>Company Info</legend></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-building"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" runat="server" placeholder="Company Name" CssClass="textbox" ></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-sticky-note"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox2" runat="server" placeholder="Description" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox3" runat="server" placeholder="Communication Address" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-map-marker"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox4" runat="server" placeholder="Place" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-phone"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" runat="server" placeholder="Landline Number" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" runat="server" placeholder="Mobile Number" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa fa-envelope"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" runat="server" placeholder="E-Mail" CssClass="textbox"></asp:TextBox></br>
-           <span ><i style="color:#1ab188; height:55px;"class="fa  fa-globe"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" runat="server" placeholder="Website URL" CssClass="textbox"></asp:TextBox>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-building"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox1" runat="server" 
+           placeholder="Company Name" CssClass="textbox" ></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"
+            ForeColor="Red" ErrorMessage="Enter Company"></asp:RequiredFieldValidator>
+           </br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-sticky-note"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox2" runat="server" 
+           placeholder="Description" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" 
+           ForeColor="Red" ErrorMessage="Enter Description"></asp:RequiredFieldValidator>
+           </br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox3" runat="server" 
+           placeholder="Communication Address" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3"
+            ForeColor="Red" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+           </br>
+           
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-map-marker"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox4" runat="server" 
+           placeholder="Place" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4"
+            ForeColor="Red" ErrorMessage="Enter Place"></asp:RequiredFieldValidator>
+           </br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-phone"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" runat="server"
+            placeholder="Landline Number" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5"
+            ForeColor="Red" ErrorMessage="Enter Landline Number"></asp:RequiredFieldValidator>
+            </br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-mobile"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox6" runat="server"
+            placeholder="Mobile Number" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6"
+            ForeColor="Red" ErrorMessage="Enter Mobile Number"></asp:RequiredFieldValidator>
+            </br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa fa-envelope"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox7" runat="server"
+           placeholder="E-Mail" type="Email" CssClass="textbox"></asp:TextBox>
+           <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ForeColor="Red"
+            ControlToValidate="TextBox7" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Enter Valid Email"></asp:RegularExpressionValidator>
+           </br>
+           <span ><i style="color:#1ab188; height:55px;"class="fa  fa-globe"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" runat="server" 
+           placeholder="Website URL" CssClass="textbox"></asp:TextBox>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox8"
+            ForeColor="Red" ErrorMessage="Enter Valid URL"></asp:RequiredFieldValidator>
            </fieldset>
 
 
             <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
        <legend>Accounts Info</legend></br>
-                <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" runat="server" placeholder="Username" CssClass="textbox"></asp:TextBox></br>
-                <span ><i style="color:#1ab188; height:55px;"class="fa fa-unlock-alt"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" runat="server" TextMode="Password" placeholder="Password" CssClass="textbox"></asp:TextBox></br>
-                <span ><i style="color:#1ab188; height:55px;"class="fa fa-lock"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox11" runat="server" TextMode="Password" placeholder="Confirm Password" CssClass="textbox"></asp:TextBox>
+                <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" runat="server"
+                 placeholder="Username" CssClass="textbox"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox9"
+                 ForeColor="Red" ErrorMessage="Enter Username"></asp:RequiredFieldValidator>
+                <asp:Label ID="lbluser" runat="server"></asp:Label>
+                 </br>
+                <span ><i style="color:#1ab188; height:55px;"class="fa fa-unlock-alt"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" runat="server"
+                 TextMode="Password" placeholder="Password" CssClass="textbox"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox10"
+                 ForeColor="Red" ErrorMessage="Enter Password"></asp:RequiredFieldValidator>
+                 </br>
+                <span ><i style="color:#1ab188; height:55px;"class="fa fa-lock"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox11" runat="server" 
+                TextMode="Password" placeholder="Confirm Password" CssClass="textbox"></asp:TextBox>
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox10" ControlToValidate="TextBox11"
+                ForeColor="Red" ErrorMessage="Password Doesn't Match"></asp:CompareValidator>
                 </fieldset>
 
        <asp:Button ID="Button4" runat="server" Text="Register" CssClass="sub" BackColor="#1ab188" ForeColor="White" />
