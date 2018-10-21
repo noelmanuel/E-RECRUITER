@@ -56,7 +56,7 @@ public partial class jslogin : System.Web.UI.Page
                 {
                     String st = rdr.GetString(0);
                     if (st == "approved")
-                        Response.Redirect("~/Jobprovider/providerhome.aspx");
+                        Response.Redirect("~/Jobprovider/provider.aspx");
                 }
             }
             else
