@@ -13,7 +13,7 @@
         {
             margin:0;
             padding:0;
-         }
+            }
         .style1
         {
             width: 100%;
@@ -158,7 +158,7 @@ footer
         {
             width: 1360px;
             margin: auto;
-            height:30px;
+            height:60px;
         }
 
         .row 
@@ -278,7 +278,14 @@ footer
     </form>
  <footer>
     <div class="container">
+    <div>
 
+        
+            <div style=" margin-left:80%; position:absolute; margin-top:-1.5%;">
+                <h4 style="color:#1AB188;">Need Help?</h4>
+                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
+                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+            </div>
         </div>
     
 </footer>

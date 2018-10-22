@@ -1,0 +1,28 @@
+﻿.col {
+	margin-top: 12px;
+	display: inline-block;
+	position: relative;
+}
+
+.textbox {
+	border: 0;
+	padding: 2px 0;
+	border-bottom: 1px solid #ccc;
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 275px;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+.textbox:focus{
+	outline: none;
+}
+.textbox:hover
+{
+    border-color:#1AB188;
+    }
+.textbox:focus ~ .focus-border{
+	width: 100%;
+	transition: 0.4s;
+}
