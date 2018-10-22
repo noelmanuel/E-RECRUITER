@@ -34,7 +34,7 @@ public partial class Admin_adminmaster : System.Web.UI.MasterPage
 
     protected void Button6_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Admin/approvecompany.aspx");
+        Response.Redirect("~/Admin/approveprovider.aspx");
     }
     protected void Button7_Click(object sender, EventArgs e)
     {
