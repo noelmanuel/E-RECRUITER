@@ -18,6 +18,13 @@
         {
             width: 100%;
             height: 59px;
+            font-family:Courgette;
+            font-size:larger;
+            background-color:#1ab188;
+            padding-top:3%;
+            padding-left:3%;
+            
+            
         }
         .style2
         {
@@ -163,7 +170,7 @@
         {
             width: 1360px;
             margin: auto;
-            height:60px;
+            height:30px;
         }
 
         .row 
@@ -269,25 +276,19 @@
             <br />
         </div>
 
-        <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px">
+        <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px;" >
             <br />
-            <span class="style1">Welcome </span>
-            <asp:Label ID="lb1" runat="server"></asp:Label>
+            <div style=" background-color:#1ab188; height:50px; width:205px; position:absolute; margin-left:-6%; margin-top:-5%;"
+            <span class="style1"> &nbsp &nbsp Welcome </span>
+            <asp:Label ID="lb1" runat="server" CssClass="style1"></asp:Label>
+            </div>
         </div>
     </form>
     
 
     <footer>
     <div class="container">
-    <div>
-
-        
-            <div style=" margin-left:80%; position:absolute; margin-top:-1.5%;">
-                <h4 style="color:#1AB188;">Need Help?</h4>
-                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
-            </div>
-        </div>
+   
     </div>
 </footer>
 </body>
