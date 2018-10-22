@@ -324,7 +324,7 @@
                 Width="130px" OnClick="Button4_click" BackColor="Red" 
                 BorderStyle="None" ForeColor="White"   />
                 <div class="dropdown-content">
-                <a href="Jobprovider/providerregn.aspx">JOB PROVIDER</a>
+                <a href="Jobprovider/provideregn.aspx">JOB PROVIDER</a>
                 <a href="JobSeeker/jsregn.aspx">JOB SEEKER</a>
         
                 </div>
