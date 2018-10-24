@@ -142,14 +142,14 @@
 
         <div style="border:1px solid #b96e46; background-color:#b96e46; height:20px; width:250px; margin-left:3%; margin-top:3%;"><h4>Highest Qualification</h4></div>
         <div style=" border:1px solid #b96e46; height:40px; width:117px; margin-left:3%; margin-top:1%;">
-            <asp:DropDownList ID="DropDownList1" runat="server" Height="40px" Width="117px">
+            <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" runat="server" Height="40px" Width="117px" AutoPostBack="True">
             <asp:ListItem Selected hidden>Course</asp:ListItem>
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ForeColor="Red" ControlToValidate="DropDownList1" runat="server" ErrorMessage="*" ></asp:RequiredFieldValidator>
         </div>
         <div style=" border:1px solid #b96e46; height:40px; width:117px; margin-left:17.8%; margin-top:-4.7%; position:absolute;">
-            <asp:DropDownList ID="DropDownList2" runat="server" Height="40px" Width="117px">
-            <asp:ListItem Selected hidden>Branch</asp:ListItem>
+            <asp:DropDownList ID="DropDownList2" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" runat="server" Height="40px" Width="117px" AutoPostBack="True">
+            
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server"  ForeColor="Red" ControlToValidate="DropDownList2" ErrorMessage="*" ></asp:RequiredFieldValidator>
         </div>
@@ -181,12 +181,13 @@
 
 
         <div style=" border:1px solid red; height:40px; width:150px; margin-left:61.8%; margin-top:6%; position:absolute;">
-            <asp:Button ID="Button1" runat="server" Text="Button" Height="40px" 
+            <asp:Button ID="Button1" runat="server" Text="SUBMIT" Height="40px" 
                 Width="150px" BackColor="#E51616" ForeColor="White" BorderStyle="None" 
                 onclick="Button1_Click" /></div>
         <div style=" border:1px solid white; height:40px; width:150px; margin-left:80%; margin-top:6%; position:absolute;">
-            <asp:Button ID="Button2" runat="server" Text="Button" Height="40px" 
-                Width="150px" BackColor="#ececec" ForeColor="Black" BorderStyle="None" /></div>
+            <asp:Button ID="Button2" runat="server" Text="CLEAR" Height="40px" 
+                Width="150px" BackColor="#ececec" ForeColor="Black" BorderStyle="None" 
+                onclick="Button2_Click" /></div>
 
 
 
