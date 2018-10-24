@@ -46,22 +46,22 @@ public partial class jslogin : System.Web.UI.Page
                 }
 
             }
-            else if (utype == "company")
+            else if (utype == "job provider")
             {
-                Session["cmpuser"] = txtuname.Text;
-                str = "select status from compregn where compid='" + txtuname.Text + "'";
+                Session["juser"] = txtuname.Text;
+                str = "select status from jobproviderregn where usname='" + txtuname.Text + "'";
 
                 rdr = obj.ReadData(str);
                 if (rdr.Read())
                 {
                     String st = rdr.GetString(0);
                     if (st == "approved")
-                        Response.Redirect("~/Jobprovider/provider.aspx");
+                        Response.Redirect("~/Jobprovider/providerhome.aspx");
                 }
             }
             else
             {
-
+                Response.Redirect("~/about.aspx");
             }
 
 
