@@ -54,7 +54,7 @@ public partial class Admin_adminmaster : System.Web.UI.MasterPage
     }
     protected void Button11_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Admin/sendexsch.aspx");
+        Response.Redirect("~/Admin/communication.aspx");
     }
     protected void Button5_Click1(object sender, EventArgs e)
     {
