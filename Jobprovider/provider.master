@@ -219,7 +219,7 @@ footer
 <div class="mainbox2">
     <div class="firstbox2">
     
-       <img src="../images/logo.jpg" style=" margin-left:24%; margin-top:20px;" />
+       <img src="../images/logo1.jpg" style=" margin-left:24%; margin-top:20px;" />
         </div>
         <div class="secondbox2">
         
@@ -273,7 +273,7 @@ footer
     <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px">
         <br />
         <span class="style1">Welcome </span>
-        <asp:Label ID="lb1" runat="server"></asp:Label>
+        <asp:Label ID="lblprovider" runat="server"></asp:Label>
     </div>
     </form>
  <footer>
