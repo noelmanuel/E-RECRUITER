@@ -281,7 +281,7 @@ footer
     <div>
 
         
-            <div style=" margin-left:80%; position:absolute; margin-top:-1.5%;">
+            <div style=" margin-left:80%; position:absolute; margin-top:-.3%;">
                 <h4 style="color:#1AB188;">Need Help?</h4>
                 <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
                 <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>

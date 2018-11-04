@@ -44,7 +44,7 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     }
     protected void Button6_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Jobprovider/addvacancy.aspx");
+        Response.Redirect("~/Jobprovider/vacancy.aspx");
     }
     protected void Button7_Click(object sender, EventArgs e)
     {
