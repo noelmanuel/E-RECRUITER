@@ -35,24 +35,24 @@ h3
      <div style=" height:691%; width:88%; background-color:#fff; margin-top:0.5%; margin-left:28%; position:absolute; ">
      <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%;  margin-top:1%;"><h3>JOB TITLE</h3></div>
         <div style="  height:40px; width:180px; margin-left:40%; margin-top:-4.8%; position:absolute;">
-        <asp:DropDownList ID="DropDownList1"  runat="server" Height="40px" Width="180px" AutoPostBack="True">
+        <asp:DropDownList ID="title" OnSelectedIndexChanged="title_SelectedIndexChanged"  runat="server" Height="40px" Width="180px" AutoPostBack="True">
             <asp:ListItem Selected hidden>TITLE</asp:ListItem>
             </asp:DropDownList>
             
             <div style="border:1px solid #b96e46; background-color:#b96e46; height:20px; width:250px; margin-left:-80%; margin-top:5%;"><h4>ELIGIBILITY CRITERIA</h4></div>
         <div style="border:1px solid #b96e46; height:40px; width:120px; margin-left:-143px; margin-top: 2.5%; position:absolute;">
-        <asp:DropDownList ID="DropDownList2"  runat="server" Height="40px" Width="120px" AutoPostBack="True">
+        <asp:DropDownList ID="course" OnSelectedIndexChanged="course_SelectedIndexChanged"  runat="server" Height="40px" Width="120px" AutoPostBack="True">
             <asp:ListItem Selected hidden>COURSE</asp:ListItem>
             </asp:DropDownList></div>
             <div style=" border:1px solid #b96e46; height:40px; width:120px; margin-left:-10px; margin-top:2.5%; position:absolute;">
-            <asp:DropDownList ID="DropDownList3"  runat="server" Height="40px" Width="120px" AutoPostBack="True">
+            <asp:DropDownList ID="branch" OnSelectedIndexChanged="branch_SelectedIndexChanged"  runat="server" Height="40px" Width="120px" AutoPostBack="True">
              <asp:ListItem Selected hidden>BRANCH</asp:ListItem>
             </asp:DropDownList></div>
             
             <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:-184%; margin-top:35%;"><h3> RECRUITMENT PROCESS</h3></div>
         <div style="  height:40px; width:509px; margin-left:10%; margin-top:-24%; position:absolute">
             <asp:TextBox ID="process" runat="server" Height="35px" Width="180px"></asp:TextBox></div>
-            <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:-184%;  margin-top:4%;"><h3>SALARY</h3></div>
+            <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:-184%;  margin-top:4%;"><h3>SALARY/annum</h3></div>
         <div style="  height:40px; width:180px; margin-left:10%; margin-top:-24%; position:absolute">
             <asp:TextBox ID="salary"  runat="server" Height="35px" Width="180px"></asp:TextBox></div>
              <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:-184%;  margin-top:4%;"><h3>LOCATION</h3></div>
@@ -70,10 +70,10 @@ h3
 
 
             <div style=" border:1px solid red; height:40px; width:150px; margin-left:1%; margin-top:6%; position:absolute;">
-            <asp:Button ID="Button1" runat="server" Text="SUBMIT" Height="40px" 
+            <asp:Button ID="Button1" OnClick="btnsub" runat="server" Text="SUBMIT" Height="40px" 
                 Width="150px" BackColor="#1ab188" ForeColor="White" BorderStyle="None"/></div>
         <div style=" border:1px solid white; height:40px; width:150px; margin-left:100%; margin-top:6%; position:absolute;">
-            <asp:Button ID="Button2" runat="server" Text="CLEAR" Height="40px" 
+            <asp:Button ID="Button2" OnClick="reset" runat="server" Text="CLEAR" Height="40px" 
                 Width="150px" BackColor="#ececec" ForeColor="Black" BorderStyle="None"/>
                 </div>
 
