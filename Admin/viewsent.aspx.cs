@@ -12,7 +12,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Data.SqlClient;
 
-public partial class Admin_communication : System.Web.UI.Page
+public partial class Admin_viewsent : System.Web.UI.Page
 {
     Conclass con = new Conclass();
     SqlDataReader rdr;
@@ -21,47 +21,47 @@ public partial class Admin_communication : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            pnlinbox.Visible = true;
             pnlview.Visible = false;
-
-            inbox();
+            sentmail();
         }
     }
-    void inbox()
-    {
-        //103 for only display date
-        string inbo = "select Id,FromId,ToId,Subject,Contents,convert(varchar(10),MDate,103) as MDate,MailStatus from MailDetails where ToId='ADMINISTRATOR'";
-        //rdr = con.select(inbo);
-        grdinbox.DataSource = con.GetData(inbo);
-        grdinbox.DataBind();
-        string count = "select count(*) from MailDetails where  ToId='ADMINISTRATOR' and MailStatus=1 ";
-        lblinboxstatus.Text = "(" + con.ExecuteScalar(count).ToString() + ")";
 
+    void sentmail()
+    {
+        string sent = "select Id,FromId,ToId,Subject,Contents,convert(varchar(10),MDate,103) as MDate,MailStatus from  MailDetails where FromId='ADMINISTRATOR'";
+        grdsentbox.DataSource = con.GetData(sent);
+        grdsentbox.DataBind();
+        string count = "select count(*) from MailDetails where  FromId='ADMINISTRATOR'";
+        lblsentstatus.Text = "(" + con.ExecuteScalar(count).ToString() + ")";
     }
 
-    protected void lnkbtninbox_Click(object sender, EventArgs e)
+    protected void lnkbtnsentmail_Click(object sender, EventArgs e)
     {
-        pnlinbox.Visible = true;
+        pnlsent.Visible = true;
 
         pnlview.Visible = false;
-        inbox();
+        sentmail();
+
     }
-    
+
+
 
 
     protected void grdinbox_RowCommand(object sender, GridViewCommandEventArgs e)
     {
         pnlview.Visible = true;
 
+        pnlsent.Visible = false;
 
         //commmandArgument for check the id is matching or not 
         string inbox = "select * from MailDetails where Id=" + int.Parse(e.CommandArgument.ToString());
         rdr = con.ReadData(inbox);
         if (rdr.Read())
         {
-
+            lblviewto.Text = rdr["ToId"].ToString();
             lblviewcontent.Text = rdr["Contents"].ToString();
-            btnreply.Visible = true;
+            
+
             //update MailStatus=0 to 
             string update = "update MailDetails set MailStatus=0 where Id=" + int.Parse(e.CommandArgument.ToString());
             con.CreateCommand(update);
@@ -75,14 +75,13 @@ public partial class Admin_communication : System.Web.UI.Page
     {
         pnlview.Visible = true;
 
-        pnlinbox.Visible = false;
         string inbox = "select * from MailDetails where Id=" + int.Parse(e.CommandArgument.ToString());
         rdr = con.ReadData(inbox);
         if (rdr.Read())
         {
-
+            
             lblviewcontent.Text = rdr["Contents"].ToString();
-            btnreply.Visible = false;
+                        
             string update = "update MailDetails set MailStatus=0 where Id=" + int.Parse(e.CommandArgument.ToString());
             con.CreateCommand(update);
         }
@@ -101,38 +100,34 @@ public partial class Admin_communication : System.Web.UI.Page
 
         }
     }
-    protected void chkinboxselect_CheckedChanged(object sender, EventArgs e)
+
+
+    protected void lnksentdelete_Click(object sender, EventArgs e)
     {
-        foreach (GridViewRow row in grdinbox.Rows)
-        {
-            if (chkinboxselect.Checked)
-                ((CheckBox)row.FindControl("chkinboxselect")).Checked = true;
-            else
-                ((CheckBox)row.FindControl("chkinboxselect")).Checked = false;
-        }
-    }
-    protected void lnkinboxdelete_Click(object sender, EventArgs e)
-    {
-        foreach (GridViewRow row in grdinbox.Rows)
+        foreach (GridViewRow row in grdsentbox.Rows)
         {
 
-            CheckBox check = (CheckBox)row.FindControl("chkinboxselect");
+            CheckBox check = (CheckBox)row.FindControl("chksentmail");
             if (check.Checked)
             {
                 Label lbl = (Label)row.FindControl("lblId");
                 string sent = "Delete from MailDetails where Id=" + int.Parse(lbl.Text);
                 con.CreateCommand(sent);
-                inbox();
+                sentmail();
             }
 
         }
     }
-    protected void btnrpy(object sender, EventArgs e)
+    protected void chksentselect_CheckedChanged(object sender, EventArgs e)
     {
-        Response.Redirect("~/Admin/sentmail.aspx");
-
+        foreach (GridViewRow row in grdsentbox.Rows)
+        {
+            if (chksentselect.Checked)
+                ((CheckBox)row.FindControl("chksentmail")).Checked = true;
+            else
+                ((CheckBox)row.FindControl("chksentmail")).Checked = false;
+        }
     }
-
     protected void inboxc(object sender, EventArgs e)
     {
         Response.Redirect("~/Admin/communication.aspx");
