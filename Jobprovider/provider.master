@@ -18,6 +18,8 @@
         {
             width: 100%;
             height: 59px;
+            font-size: 25px;
+            
         }
         .style2
         {
@@ -243,11 +245,11 @@ footer
    </p>
     </div>
     </div>
-    <div style="top: 271px; left: 260px; position: absolute; height: 74px; width: 1014px">
+    <div style="top: 271px; left: 260px; position: absolute; height: 74px; width: 1018px">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>
-    <div style=" position: absolute; height: 460px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
+    <div style=" position: absolute; height: 467px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
         <asp:Button ID="Button5" runat="server" Text="POST JOBS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
         ForeColor="White" CssClass="sidebox" onclick="Button5_Click" />
         <br />
@@ -273,7 +275,7 @@ footer
     <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px">
         <br />
         <span class="style1">Welcome </span>
-        <asp:Label ID="lblprovider" runat="server"></asp:Label>
+        <asp:Label ID="lblprovider" runat="server" Font-Size="30px" Font-Bold="true" ></asp:Label>
     </div>
     </form>
  <footer>
@@ -281,7 +283,7 @@ footer
     <div>
 
         
-            <div style=" margin-left:80%; position:absolute; margin-top:-.3%;">
+            <div style=" margin-left:80%; position:absolute; margin-top:-1.5%;">
                 <h4 style="color:#1AB188;">Need Help?</h4>
                 <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
                 <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
