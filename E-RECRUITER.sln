@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E-RECRUITER", ".", "{BDF69C38-79C1-444A-AEC5-9D229C99F5D8}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E-RECRUITER", ".", "{3D84DF13-E1EF-4F8D-88D1-1442A8A76527}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/E-RECRUITER"
@@ -26,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BDF69C38-79C1-444A-AEC5-9D229C99F5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDF69C38-79C1-444A-AEC5-9D229C99F5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D84DF13-E1EF-4F8D-88D1-1442A8A76527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D84DF13-E1EF-4F8D-88D1-1442A8A76527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
