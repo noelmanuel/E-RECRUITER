@@ -239,7 +239,7 @@
         
         
     
-     <p style="margin-left:23%;">
+     <p style="margin-left:20.5%;">
 
                 <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button1_Click" />
                 <asp:Button ID="Button2" runat="server" Text="SERVICES" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button2_Click" />
