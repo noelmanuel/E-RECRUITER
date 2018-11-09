@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <style type="text/css">
-   <style type="text/css">
+   
     .name
     {
         position:absolute;
@@ -71,9 +71,10 @@
           
           .lbl
           {
-              margin-left:61%;
+              margin-left:2%;
               position:absolute;
-              margin-top:-37%;
+              margin-top:2%;
+              
      
               }
      
@@ -83,9 +84,7 @@
 <div style=" height:530px; width:1200px; margin-top:-12%;">
 
 <div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:63.2%;">
-    <asp:Button ID="Button2" runat="server" Text="Inbox" ForeColor="White" 
-        BackColor="#F6B440" Height="30" Width="120" CssClass="nob" 
-        onclick="inboxc" /></div>
+    <asp:Button ID="Button2" runat="server" Text="Inbox" ForeColor="White" BackColor="#F6B440" Height="30" Width="120" CssClass="nob" onclick="inboxc" /></div>
 <div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:74%;">
     <asp:Button ID="Button3" runat="server" Text="Compose" ForeColor="White" BackColor="#F6B440" Height="30" Width="120" OnClick="composec" CssClass="nob" /></div>
 <div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:84.5%;">
@@ -115,7 +114,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <asp:LinkButton ID="lnkinboxdelete" runat="server" Font-Bold="True" 
                                     onclick="lnkinboxdelete_Click" ForeColor="Red">Delete</asp:LinkButton><p></p>
-                          <div>
+                          
                                 <asp:GridView ID="grdinbox" runat="server" AutoGenerateColumns="False" 
                                     BackColor="#CCCCCC" BorderColor="#F6B440" BorderStyle="Solid" BorderWidth="1px" 
                                     CellPadding="4" CellSpacing="2" ForeColor="Black" Height="41px" 
@@ -135,12 +134,12 @@
                                             </ItemTemplate>
                                             <FooterStyle Font-Bold="True" />
                                             <HeaderStyle BackColor="#1AB188" />
-                                            <ItemStyle HorizontalAlign="Center" BackColor="White" />
+                                            <ItemStyle HorizontalAlign="Center" />
                                         </asp:TemplateField>
                                         <asp:BoundField DataField="FromId" HeaderText="From">
                                             <FooterStyle Font-Bold="True" />
                                         <HeaderStyle BackColor="#1AB188" />
-                                        <ItemStyle HorizontalAlign="Center" BackColor="White" />
+                                        <ItemStyle HorizontalAlign="Center" />
                                         </asp:BoundField>
                                         <asp:TemplateField HeaderText="Subject">
                                             <ItemTemplate>
@@ -148,12 +147,12 @@
                                             </ItemTemplate>
                                             <FooterStyle Font-Bold="True" />
                                             <HeaderStyle BackColor="#1AB188" />
-                                            <ItemStyle HorizontalAlign="Center" BackColor="White" />
+                                            <ItemStyle HorizontalAlign="Center" />
                                         </asp:TemplateField>
                                         <asp:BoundField DataField="MDate" HeaderText="Date">
                                             <FooterStyle Font-Bold="True" />
                                         <HeaderStyle BackColor="#1AB188" />
-                                        <ItemStyle HorizontalAlign="Center" BackColor="White" />
+                                        <ItemStyle HorizontalAlign="Center" />
                                         </asp:BoundField>
                                         <asp:TemplateField HeaderText="Status" Visible="False">
                                             <ItemTemplate>
@@ -165,18 +164,18 @@
                                     <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
                                     <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
                                 </asp:GridView>
-				                <div>
+				                
  		                        </asp:Panel>
                 </div>
-		<div style=" background-color:#f6b440; height:193%; width:3px; margin-left:240%; margin-top:-25%; position:absolute;"></div>
-        <div style=" position:absolute; margin-left:2%; margin-top:3.5%; ">
-         <asp:Panel ID="pnlview" runat="server" Height="155px" Width="949px">                   
+		<div style=" background-color:#f6b440; height:100%; width:3px; margin-left:53%;position:absolute;"></div>
+        <div style=" position:absolute; margin-left:55%; margin-top:5.5%; ">
+         <asp:Panel ID="pnlview" runat="server">                   
                
-		<div style=" width:470px; height:26px; background-color:#1ab188; position:absolute; margin-left:60%; margin-top:-42.3%;  ">
-                <h5 style="color:White; text-align:center; padding-top:2px; position:absolute; margin-left:43%; margin-top:1%; ">&nbsp MESSAGE</h5></div>
+		<div style=" width:470px; height:26px; background-color:#1ab188;    ">
+                <h5 style="color:#000; text-align:center; padding-top:5px;  margin-top:-1%;  ">&nbsp MESSAGE</h5></div>
             
-                 <asp:Label ID="lblviewcontent" runat="server" CssClass="lbl"></asp:Label>
-                           
+                 <asp:Label ID="lblviewcontent" runat="server" CssClass="lbl" Width="200"></asp:Label>
+                         
                            
                 </asp:Panel>
                 </div>

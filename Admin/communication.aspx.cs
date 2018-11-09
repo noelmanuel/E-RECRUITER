@@ -93,10 +93,10 @@ public partial class Admin_communication : System.Web.UI.Page
         {
             string status = ((Label)e.Row.FindControl("lblstatus")).Text;
             if (status == "True")
-                e.Row.BackColor = System.Drawing.Color.ForestGreen;
+                e.Row.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             else
             {
-                e.Row.BackColor = System.Drawing.Color.DimGray;
+                e.Row.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
             }
 
         }
