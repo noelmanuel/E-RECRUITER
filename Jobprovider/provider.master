@@ -160,7 +160,7 @@ footer
         {
             width: 1360px;
             margin: auto;
-            height:60px;
+            height:30px;
         }
 
         .row 
@@ -227,7 +227,7 @@ footer
         
         
     
-     <p style="margin-left:40%;">
+     <p style="margin-left:33.7%;">
      
         <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" 
                  Width="100px" BackColor="#1ab188" 
@@ -280,14 +280,7 @@ footer
     </form>
  <footer>
     <div class="container">
-    <div>
-
-        
-            <div style=" margin-left:80%; position:absolute; margin-top:-1.5%;">
-                <h4 style="color:#1AB188;">Need Help?</h4>
-                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
-            </div>
+    
         </div>
     
 </footer>
