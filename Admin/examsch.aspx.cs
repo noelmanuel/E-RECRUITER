@@ -67,6 +67,6 @@ public partial class Admin_examsch : System.Web.UI.Page
     {
         Session["comp"] = ddcomp.SelectedItem.ToString();
         Session["jtitle"] = ddjob.SelectedItem.ToString();
-        //Response.Redirect("~/Admin/sendexsch.aspx");
+        Response.Redirect("~/Admin/sendexsch.aspx");
     }
 }
