@@ -143,8 +143,9 @@
         }
         .sidebox
         {
-            margin:3%;
+            margin:4.5%;
             }
+   
 footer 
         {
             background: #3c3d41;
@@ -249,7 +250,7 @@ footer
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>
-    <div style=" position: absolute; height: 467px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
+    <div style=" position: absolute; height: 500px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
         <asp:Button ID="Button5" runat="server" Text="POST JOBS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
         ForeColor="White" CssClass="sidebox" onclick="Button5_Click" />
         <br />

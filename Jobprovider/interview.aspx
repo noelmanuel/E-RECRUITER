@@ -42,7 +42,7 @@ h2
        
         <h2 style=" position:absolute; margin-left:185px; margin-top:25px;">INTERVIEW  DETAILS</h2>
         </div>
-     
+     <div style= "border: 2px solid #383860; width:80%; height:70%; margin-top:2% ">
          <div style=" border:1px solid #b96e46; background-color:#A03040; height:40px; width:200px; margin-left:15%;  margin-top:3%;"><h3>JOB TITLE</h3></div>
         <div style="  height:40px; width:180px; margin-left:52%; margin-top:-4.7%; position:absolute;">
         <asp:DropDownList ID="title"   runat="server" Height="40px" Width="200px"  AutoPostBack="True">
@@ -63,14 +63,14 @@ h2
         <div style=" border:1px solid #b96e46; background-color:#A03040; height:40px; width:200px; margin-left:15%; margin-top:3%;"><h3>TIME</h3></div> 
         <div style="  height:40px; width:180px; margin-left:52%; margin-top:-4.3%;  position:absolute;">
         <asp:TextBox ID="time" type="time"  runat="server" Height="35px" Width="200px"></asp:TextBox>
-        </div>
+        </div></div>
 
 
-        <div style="  height:40px; width:150px; margin-left:24%; margin-top:5%; position:absolute;">
+        <div style="  height:40px; width:150px; margin-left:24%; margin-top:0%; position:absolute;">
         <asp:Button ID="Button1" runat="server" OnClick="btnsub"  Text="SUBMIT" Height="50px" Font-Bold="true" Font-Size="25px"
                 Width="200px" BackColor="#383860" ForeColor="White" BorderStyle="None" /></div>
 
-      <div style="  height:40px; width:150px; margin-left:50%; margin-top:5%; position:absolute;">
+      <div style="  height:40px; width:150px; margin-left:50%; margin-top:-0.2%; position:absolute;">
             <asp:Button ID="Button2" runat="server" OnClick="reset"   Text="CLEAR" Height="50px" Font-Bold="true"  Font-Size="25px"
                 Width="200px" BackColor="#E51616" ForeColor="White" BorderStyle="None"/>
               </div> 
