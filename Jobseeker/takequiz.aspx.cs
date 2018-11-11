@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 
 public partial class Jobseeker_takequiz : System.Web.UI.Page
 {
-    string str;
+    string str,stm;
     string jobtitle;
     string[] choice = new string[200];
     int score = 0, index = 0, jobid;
@@ -24,14 +24,19 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
     Conclass obj = new Conclass();
     protected void Page_Load(object sender, EventArgs e)
     {
+        
         Label1.Text = Session["r"].ToString();
         //Label2.Text = Convert.ToInt32(index);
         Label2.Text = Session["juser"].ToString();
         Label3.Text = Session["cmp"].ToString();
         Label4.Text = Session["jb"].ToString();
         
-
-        if (!IsPostBack)
+        if(!IsPostBack)
+        {
+            stm = " select regno from result where usname = '" + Session["juser"].ToString() + "' and status='qualified'";
+            Response.Redirect("~/Jobseeker/score.aspx");
+        }
+        else
         {
             //DataSet ds = new DataSet();
             //str="select code,qns,ch1,ch2,ch3,ch4 from examdb";
@@ -133,7 +138,7 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
         obj.CreateCommand(str);
         //db.database_command(str);
         //Session["total"] = score;
-        Response.Redirect("seekerhome.aspx");
+        Response.Redirect("score.aspx");
 
     }
 
