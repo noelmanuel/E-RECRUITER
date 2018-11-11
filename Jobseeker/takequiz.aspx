@@ -75,6 +75,53 @@
            background: #ff6600;
             color: white;
         }
+        .log
+        {
+            margin-top:15px;
+            margin-left:16%;
+            }
+            .server
+        {
+            margin-top:45px;
+            margin-left:14px;
+            }
+            
+            .lb1
+            {
+                margin-top:200px;
+                margin-left:95px;
+                position:absolute;
+                }
+                .lb2
+            {
+                margin-top:221px;
+                margin-left:125px;
+                position:absolute;
+                }
+                  .lb3
+            {
+                margin-top:80px;
+                margin-left:105px;
+                position:absolute;
+                }
+                  .lb4
+            {
+                margin-top:100px;
+                margin-left:70px;
+                position:absolute;
+                }
+                  .lb6
+            {
+                margin-top:160px;
+                margin-left:95px;
+                position:absolute;
+                }
+                  .lb5
+            {
+                margin-top:140px;
+                margin-left:135px;
+                position:absolute;
+                }
     </style>
 </head>
 
@@ -94,7 +141,13 @@
 
 
 
-        <div style="width:100%; height:49px; background-color:#fff; border-bottom: 1px solid #282828"></div>
+        <div style="width:100%; height:49px; background-color:#fff; border-bottom: 1px solid #282828">
+            <asp:Image  runat="server" ImageUrl="~/images/logo1.jpg" CssClass="log" Width="150" Height="21" />
+            <div style=" font-size:medium; margin-left:78.5%; margin-top:-25px;">
+            <asp:Button ID="Button1" runat="server" Text="HOME" Height="30" Width="100" BackColor="#1AB188" BorderStyle="None" ForeColor="White" />
+            <asp:Button ID="Button2" runat="server" Text="SIGN OUT" Height="30" Width="100" BackColor="Red" BorderStyle="None" ForeColor="White" />
+            </div>
+            </div>
     
         <div style="width:13%; height:600px; background-color:black; float:left;">
         
@@ -112,9 +165,30 @@
         <div style="width:68%; height:600px; background-color:blue; display:inline-block; "></div>
         <div style="width:19%; height:600px; background-color:black; display:inline-block; float:right; font-size:0;">
 
-            <div style="width:100%; height:299px; background-color:#282828; border-bottom:1px solid #999898;"></div><br />
+            <div style="width:100%; height:299px; background-color:#282828;   border-bottom:1px solid #999898;">
+            <h5 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:4%;">CANDIDATE DETAILS</h5>
+
+            <h6 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:5px; margin-top:80px;">Register No :</h6>
+                <asp:Label ID="Label1" runat="server"  ForeColor="White" 
+                    Font-Size="Medium" CssClass="lb3"></asp:Label><br />
+            <h6 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:5px; margin-top:100px;">Name       :</h6>
+                <asp:Label ID="Label2" runat="server"  ForeColor="White" 
+                    Font-Size="Medium" CssClass="lb4"></asp:Label>
+            <h6 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:5px; margin-top:140px;">Company Name :</h6>
+                <asp:Label ID="Label3" runat="server"  ForeColor="White" 
+                    Font-Size="Medium" CssClass="lb5"></asp:Label>
+            <h6 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:5px; margin-top:160px;">Job Post     :</h6>
+                <asp:Label ID="Label4" runat="server"  ForeColor="White" 
+                    Font-Size="Medium" CssClass="lb6"></asp:Label>
+            <h6 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:5px; margin-top:200px;">Total Time :</h6><asp:Label ID="Label5" runat="server" Text="10 Mins" ForeColor="White" Font-Size="Medium" CssClass="lb1"></asp:Label>
+            <h6 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:5px; margin-top:220px;">No of Question :</h6>
+                <asp:Label ID="Label6" runat="server" Text="5" ForeColor="White" 
+                    Font-Size="Medium" CssClass="lb2"></asp:Label>
+            </div><br />
             <div style="width:100%; height:149px; background-color:#282828; border-bottom:1px solid #999898;"></div><br />
-            <div style="width:100%; height:149px; background-color:#282828; border-bottom:1px solid #999898;"></div>
+            <div style="width:100%; height:148px; background-color:#282828; border-bottom:1px solid #999898;">
+            <h5 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:6%; margin-top:10px;">Server Statistics</h5>
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/server.jpg" CssClass="server" /></div>
         </div>
 
         
