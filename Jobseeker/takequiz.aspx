@@ -122,6 +122,10 @@
                 margin-left:135px;
                 position:absolute;
                 }
+                .bo
+                {
+                    font-weight:bold;
+                    }
     </style>
 </head>
 
@@ -162,7 +166,58 @@
             </div>
         
         </div>
-        <div style="width:68%; height:600px; background-color:blue; display:inline-block; "></div>
+        <div style="width:68%; height:600px; background-color:#e5e5e5; display:inline-block; ">
+        <div style=" margin-left:5%; font-size:medium;">
+        <asp:GridView ID="grdquestions" runat="server" AutoGenerateColumns="False" 
+            BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" 
+            CellPadding="3" CellSpacing="1" DataKeyNames="code" GridLines="None" 
+            onselectedindexchanged="grdquestions_SelectedIndexChanged" 
+            
+                
+                
+                
+                style="top: 136px; position: absolute; height: 418px; width: 983px; left: 224px;">
+            <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
+            <Columns>
+                <asp:TemplateField>
+                    <HeaderTemplate>
+                        QUESTIONS
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="lbl2" runat="server" Text='<%#Eval("qns")%>'></asp:Label>
+                    </ItemTemplate>
+                    <HeaderStyle BackColor="#F1701B" />
+                    <ItemStyle CssClass="bo" />
+                </asp:TemplateField>
+                <asp:TemplateField>
+                    <HeaderTemplate>
+                        OPTIONS
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:RadioButton ID="rdb1" runat="server" GroupName="g1" 
+                            Text='<%#Eval("ch1")%>' /> &nbsp &nbsp 
+                        <asp:RadioButton ID="rdb2" runat="server" GroupName="g1" 
+                            Text='<%#Eval("ch2")%>' /> &nbsp &nbsp
+                        <asp:RadioButton ID="rdb3" runat="server" GroupName="g1" 
+                            Text='<%#Eval("ch3")%>' /> &nbsp &nbsp
+                        <asp:RadioButton ID="rdb4" runat="server" GroupName="g1" 
+                            Text='<%#Eval("ch4")%>' /> &nbsp &nbsp
+                    </ItemTemplate>
+                    <HeaderStyle BackColor="#F0CE30" />
+                </asp:TemplateField>
+            </Columns>
+            <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+            <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
+            <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
+        </asp:GridView>
+        
+        <div style=" margin-top:36%;position:absolute; margin-left:48.5%;">
+            <asp:Button ID="Button3" runat="server" Text="Submit" Height="30" Width="100" BackColor="#1AB188" OnClick="Button1_Click" BorderStyle="None" ForeColor="White" />
+            <asp:Button ID="Button4" runat="server" Text="Stop" Height="30" Width="100" BackColor="Red" BorderStyle="None" ForeColor="White" />
+            </div>
+            </div>
+        </div>
         <div style="width:19%; height:600px; background-color:black; display:inline-block; float:right; font-size:0;">
 
             <div style="width:100%; height:299px; background-color:#282828;   border-bottom:1px solid #999898;">
