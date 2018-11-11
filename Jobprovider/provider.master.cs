@@ -56,7 +56,7 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     }
     protected void Button9_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Jobprovider/Communication.aspx");
+        Response.Redirect("~/Jobprovider/Commn.aspx");
     }
     protected void Button10_Click(object sender, EventArgs e)
     {
@@ -64,10 +64,10 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     }
     protected void Button11_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Jobprovider/sendinterview.aspx");
+        Response.Redirect("~/Jobprovider/communication.aspx");
     }
     protected void Button12_click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Jobprovider/Communication.aspx");
+        Response.Redirect("~/Jobprovider/Comn.aspx");
     }
 }
