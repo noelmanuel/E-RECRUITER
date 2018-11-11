@@ -5,11 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <h4 style=" position:absolute; margin-top:-19%;">JOBPROVIDER APPROVAL</h4>
 <p style="  margin-top:-16%;">
-    <asp:GridView ID="Gridproviderapprove" runat="server" AutoGenerateColumns="False" DataKeyNames="usname" GridLines="None" 
+    <asp:GridView ID="Gridproviderapprove" runat="server" AutoGenerateColumns="False" DataKeyNames="compid" GridLines="None" 
         Height="184px" Width="974px" 
         onselectedindexchanged="Gridproviderapprove_SelectedIndexChanged">
         <Columns>
-            <asp:BoundField DataField="usname" HeaderText="Username">
+            <asp:BoundField DataField="compid" HeaderText="Username">
             <HeaderStyle BackColor="#1AB188" ForeColor="White" />
             <ItemStyle BackColor="White" ForeColor="Black" HorizontalAlign="Center" />
             </asp:BoundField>

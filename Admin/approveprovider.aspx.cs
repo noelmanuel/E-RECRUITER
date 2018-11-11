@@ -27,7 +27,7 @@ public partial class Admin_approveprovider : System.Web.UI.Page
     }
     public void prov()
     {
-        prsql = "select usname,cmpname,email,website from jobproviderregn where status='pending'";
+        prsql = "select compid,cmpname,email,website from jobproviderregn where status='pending'";
         pr = probj.GetData(prsql);
         Gridproviderapprove.DataSource = pr;
         Gridproviderapprove.DataBind();
@@ -36,7 +36,7 @@ public partial class Admin_approveprovider : System.Web.UI.Page
     protected void Gridproviderapprove_SelectedIndexChanged(object sender, EventArgs e)
     {
         pid = Gridproviderapprove.SelectedDataKey.Value.ToString();
-        prstr = "update jobproviderregn set status='approved' where usname='" + pid + "'";
+        prstr = "update jobproviderregn set status='approved' where compid='" + pid + "'";
         probj.CreateCommand(prstr);
         prov();
 

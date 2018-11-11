@@ -49,7 +49,7 @@ public partial class jslogin : System.Web.UI.Page
             else if (utype == "job provider")
             {
                 Session["juser"] = txtuname.Text;
-                str = "select status from jobproviderregn where usname='" + txtuname.Text + "'";
+                str = "select status from jobproviderregn where compid='" + txtuname.Text + "'";
 
                 rdr = obj.ReadData(str);
                 if (rdr.Read())

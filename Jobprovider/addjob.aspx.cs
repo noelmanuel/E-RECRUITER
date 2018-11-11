@@ -21,7 +21,7 @@ public partial class Jobprovider_addjob : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            str = "select cmpname from jobproviderregn where usname='" + Session["juser"].ToString() + "'";
+            str = "select cmpname from jobproviderregn where compid='" + Session["juser"].ToString() + "'";
             rd = con.ReadData(str);
             if (rd.Read())
 
@@ -31,7 +31,7 @@ public partial class Jobprovider_addjob : System.Web.UI.Page
     }
     protected void btnsub(object sender, EventArgs e)
     {
-        str = "insert into jobadd(usname,jobname)values('" + lblprovider.Text + "','" + jobadd.Text + "')";
+        str = "insert into jobdetails(compid,jobname)values('" + lblprovider.Text + "','" + jobadd.Text + "')";
         con.CreateCommand(str);
         jobadd.Text = "";
     }
