@@ -38,7 +38,7 @@ public partial class Jobprovider_vacancy : System.Web.UI.Page
     }
     protected void btnsub(object sender, EventArgs e)
     {
-        sql = "insert into vacancyadd(compid,jobtitle,course,branch,process,salary,loc,exp,vac,period)values('" + Session["juser"].ToString() + "','" + title.SelectedItem + "','" + course.SelectedItem + "','" + branch.SelectedItem + "','" + process.Text + "','" + salary.Text + "','" + loc.Text + "','" + exp.Text + "','" + vac.Text + "','" + period.Text + "')";
+        sql = "insert into vacancyadd(compid,jobtitle,elgcourse,elgbranch,process,salary,loc,des,nvac,period)values('" + Session["juser"].ToString() + "','" + title.SelectedItem + "','" + course.SelectedItem + "','" + branch.SelectedItem + "','" + process.Text + "','" + salary.Text + "','" + loc.Text + "','" + exp.Text + "','" + vac.Text + "','" + period.Text + "')";
         obj.CreateCommand(sql);
         process.Text = "";
         salary.Text = "";
