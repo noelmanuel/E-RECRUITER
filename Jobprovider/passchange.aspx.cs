@@ -25,12 +25,7 @@ public partial class Jobprovider_passchange : System.Web.UI.Page
 
         str = "update login set pass='" + newpass.Text + "' where usname='" + user.Text + "' and pass='" + oldpass.Text + "'";
         con.CreateCommand(str);
-        //success message
-        string message = "Your Password Changed successfully.";
-        string script = "window.onload = function(){ alert('";
-        script += message;
-        script += "')};";
-        ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true);
+        Response.Write(" <script>alert('Password Changed Successfully')</script>");
     }
     protected void reset(object sender, EventArgs e)
     {

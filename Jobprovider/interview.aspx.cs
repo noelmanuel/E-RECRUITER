@@ -38,6 +38,7 @@ public partial class Jobprovider_interview : System.Web.UI.Page
         place.Text = "";
         date.Text = "";
         time.Text = "";
+        Response.Write(" <script>alert('Interview Schedule Added Successfully')</script>");
 
     }
     protected void reset(object sender, EventArgs e)

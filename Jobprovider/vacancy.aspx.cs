@@ -46,6 +46,7 @@ public partial class Jobprovider_vacancy : System.Web.UI.Page
         exp.Text = "";
         vac.Text = "";
         period.Text = "";
+        Response.Write(" <script>alert('Vacancy Added Successfully')</script>");
 
     }
     protected void course_SelectedIndexChanged(object sender, EventArgs e)

@@ -34,5 +34,6 @@ public partial class Jobprovider_addjob : System.Web.UI.Page
         str = "insert into jobdetails(compid,jobname)values('" + lblprovider.Text + "','" + jobadd.Text + "')";
         con.CreateCommand(str);
         jobadd.Text = "";
+        Response.Write(" <script>alert('Job Added Successfully')</script>");
     }
 }

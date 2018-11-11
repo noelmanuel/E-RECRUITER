@@ -55,6 +55,6 @@ public partial class Jobseeker_examschedule : System.Web.UI.Page
     protected void btnsu_Click(object sender, EventArgs e)
     {
         Session["j"] = ddjob.SelectedItem.ToString();
-        Response.Redirect("~/Jobseeker/seekerhome.aspx");
+        Response.Redirect("~/Jobseeker/viewschedule.aspx");
     }
 }
