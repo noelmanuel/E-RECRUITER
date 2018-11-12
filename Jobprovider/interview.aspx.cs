@@ -21,7 +21,7 @@ public partial class Jobprovider_interview : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            str = "select jobname from jobdetails where compid='" + Session["juser"].ToString() + "'";
+            str = "select jobname from jobdetails where compid='" + Session["jp"].ToString() + "'";
             rd = con.ReadData(str);
             while (rd.Read())
             {
@@ -33,7 +33,7 @@ public partial class Jobprovider_interview : System.Web.UI.Page
     }
     protected void btnsub(object sender, EventArgs e)
     {
-        str = "insert into schinterview(compid,jobtitle,place,date,time)values('" + Session["juser"].ToString() + "','" + title.SelectedItem + "','" + place.Text + "','" + date.Text + "','" + time.Text + "')";
+        str = "insert into schinterview(compid,jobtitle,place,date,time)values('" + Session["jp"].ToString() + "','" + title.SelectedItem + "','" + place.Text + "','" + date.Text + "','" + time.Text + "')";
         con.CreateCommand(str);
         place.Text = "";
         date.Text = "";

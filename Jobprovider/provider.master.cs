@@ -17,7 +17,8 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        lblprovider.Text = Session["juser"].ToString();
+        
+        lblprovider.Text = Session["jp"].ToString();
     }
 
     protected void Button1_Click1(object sender, EventArgs e)

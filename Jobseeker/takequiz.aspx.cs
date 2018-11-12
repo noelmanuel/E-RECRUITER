@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 
 public partial class Jobseeker_takequiz : System.Web.UI.Page
 {
-    string str,stm;
+    string str;
     string jobtitle;
     string[] choice = new string[200];
     int score = 0, index = 0, jobid;
@@ -24,25 +24,16 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
     Conclass obj = new Conclass();
     protected void Page_Load(object sender, EventArgs e)
     {
-        
         Label1.Text = Session["r"].ToString();
         //Label2.Text = Convert.ToInt32(index);
         Label2.Text = Session["juser"].ToString();
-        Label3.Text = Session["cmp"].ToString();
-        Label4.Text = Session["jb"].ToString();
-        
-        if(!IsPostBack)
-        {
-            stm = " select regno from result where usname = '" + Session["juser"].ToString() + "' and status='qualified'";
-            Response.Redirect("~/Jobseeker/score.aspx");
-        }
-        else
+        if (!IsPostBack)
         {
             //DataSet ds = new DataSet();
             //str="select code,qns,ch1,ch2,ch3,ch4 from examdb";
             //grdquestions.DataSource = db.data_set(str);
             //grdquestions.DataBind();
-            str = "select code,qns,ch1,ch2,ch3,ch4 from examdb where jobtitle='" + Session["jb"].ToString() + "' and compid='" + Session["cmp"].ToString() + "'";
+            str = "select code,qns,ch1,ch2,ch3,ch4 from examdb where jobtitle='" + Session["jb"].ToString() + "' and compid='" + Session["jp"].ToString() + "'";
             ds = obj.GetData(str);
             grdquestions.DataSource = ds;
             grdquestions.DataBind();
@@ -134,7 +125,7 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
                 score++;
         }
 
-        str = "insert into result values('" + Session["r"].ToString() + "','" + Session["cmp"].ToString() + "','" + Session["jb"].ToString() + "','" + index + "','" + score + "','pending','" + Session["juser"].ToString() + "','pending')";
+        str = "insert into result values('" + Session["r"].ToString() + "','" + Session["jp"].ToString() + "','" + Session["jb"].ToString() + "','" + index + "','" + score + "','pending','" + Session["juser"].ToString() + "','pending')";
         obj.CreateCommand(str);
         //db.database_command(str);
         //Session["total"] = score;
@@ -144,13 +135,12 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
 
 
 
-    
-    protected void Button2_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/JobSeeker/seekerhome.aspx");
-    }
     protected void grdquestions_SelectedIndexChanged(object sender, EventArgs e)
     {
 
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/JobSeeker/jshome.aspx");
     }
 }

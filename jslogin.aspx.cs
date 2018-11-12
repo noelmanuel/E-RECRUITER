@@ -48,7 +48,7 @@ public partial class jslogin : System.Web.UI.Page
             }
             else if (utype == "job provider")
             {
-                Session["juser"] = txtuname.Text;
+                Session["jp"] = txtuname.Text;
                 str = "select status from jobproviderregn where compid='" + txtuname.Text + "'";
 
                 rdr = obj.ReadData(str);
@@ -89,6 +89,11 @@ public partial class jslogin : System.Web.UI.Page
 
     protected void Button7_click(object sender, EventArgs e)
     {
-        Response.Redirect("~/about.aspx");
+        string sc = "insert into subscribe(sname)values('" + sub.Text + "')";
+        obj.CreateCommand(sc);
+        Response.Write(" <script>alert('Subscription Successfull')</script>");
+        sub.Text = "";
+
+        
     }
 }

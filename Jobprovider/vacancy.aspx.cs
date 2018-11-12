@@ -20,7 +20,7 @@ public partial class Jobprovider_vacancy : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            str = "select jobname from jobdetails where compid='" + Session["juser"].ToString() + "' ";
+            str = "select jobname from jobdetails where compid='" + Session["jp"].ToString() + "' ";
             rd = obj.ReadData(str);
             while (rd.Read())
             {
@@ -38,7 +38,7 @@ public partial class Jobprovider_vacancy : System.Web.UI.Page
     }
     protected void btnsub(object sender, EventArgs e)
     {
-        sql = "insert into vacancyadd(compid,jobtitle,elgcourse,elgbranch,process,salary,loc,des,nvac,period)values('" + Session["juser"].ToString() + "','" + title.SelectedItem + "','" + course.SelectedItem + "','" + branch.SelectedItem + "','" + process.Text + "','" + salary.Text + "','" + loc.Text + "','" + exp.Text + "','" + vac.Text + "','" + period.Text + "')";
+        sql = "insert into vacancyadd(compid,jobtitle,elgcourse,elgbranch,process,salary,loc,des,nvac,period)values('" + Session["jp"].ToString() + "','" + title.SelectedItem + "','" + course.SelectedItem + "','" + branch.SelectedItem + "','" + process.Text + "','" + salary.Text + "','" + loc.Text + "','" + exp.Text + "','" + vac.Text + "','" + period.Text + "')";
         obj.CreateCommand(sql);
         process.Text = "";
         salary.Text = "";

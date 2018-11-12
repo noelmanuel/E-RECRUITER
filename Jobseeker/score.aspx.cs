@@ -21,7 +21,7 @@ public partial class Jobseeker_score : System.Web.UI.Page
     {
         Label1.Text = Session["r"].ToString();
         Label2.Text = Session["juser"].ToString();
-        Label3.Text = Session["cmp"].ToString();
+        Label3.Text = Session["jp"].ToString();
         Label4.Text = Session["jb"].ToString();
         str = "select tqn,mark from result where usname='" + Session["juser"].ToString() + "'";
         rd = con.ReadData(str);

@@ -59,8 +59,10 @@ public partial class Jobseeker_examlogin : System.Web.UI.Page
     protected void btnsub_Click(object sender, EventArgs e)
     {
         Session["r"] = txtrn.Text;
-        Session["cmp"] = ddcomp.SelectedItem.ToString();
+        Session["jp"] = ddcomp.SelectedItem.ToString();
         Session["jb"] = ddjob.SelectedItem.ToString();
-        Response.Redirect("~/JobSeeker/seekerhome.aspx");
+
+        Response.Redirect("~/JobSeeker/takequiz.aspx");
+
     }
 }

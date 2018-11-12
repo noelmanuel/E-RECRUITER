@@ -22,7 +22,7 @@ public partial class Jobprovider_sentmail : System.Web.UI.Page
 
 
         pnlcompose.Visible = true;
-        lblcomposefrom.Text = Session["juser"].ToString() + "@erec.com";
+        lblcomposefrom.Text = Session["jp"].ToString() + "@erec.com";
 
 
         string s = "select usname from login where usname !='job provider' ";

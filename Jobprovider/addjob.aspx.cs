@@ -21,7 +21,7 @@ public partial class Jobprovider_addjob : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            str = "select cmpname from jobproviderregn where compid='" + Session["juser"].ToString() + "'";
+            str = "select cmpname from jobproviderregn where compid='" + Session["jp"].ToString() + "'";
             rd = con.ReadData(str);
             if (rd.Read())
 

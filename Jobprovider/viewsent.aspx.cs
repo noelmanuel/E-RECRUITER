@@ -28,10 +28,10 @@ public partial class Jobprovider_viewsent : System.Web.UI.Page
 
     void sentmail()
     {
-        string sent = "select Id,FromId,ToId,Subject,Contents,convert(varchar(10),MDate,103) as MDate,MailStatus from  MailDetails where FromId='" + Session["juser"].ToString() + "@erec.com" + "' ";
+        string sent = "select Id,FromId,ToId,Subject,Contents,convert(varchar(10),MDate,103) as MDate,MailStatus from  MailDetails where FromId='" + Session["jp"].ToString() + "@erec.com" + "' ";
         grdsentbox.DataSource = con.GetData(sent);
         grdsentbox.DataBind();
-        string count = "select count(*) from MailDetails where  FromId='" + Session["juser"].ToString() + "@erec.com" + "' and MailStatus=1 ";
+        string count = "select count(*) from MailDetails where  FromId='" + Session["jp"].ToString() + "@erec.com" + "' and MailStatus=1 ";
         lblsentstatus.Text = "(" + con.ExecuteScalar(count).ToString() + ")";
     }
 

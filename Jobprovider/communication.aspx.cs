@@ -30,11 +30,11 @@ public partial class Jobprovider_communication : System.Web.UI.Page
     void inbox()
     {
         //103 for only display date
-        string inbo = "select Id,FromId,ToId,Subject,Contents,convert(varchar(10),MDate,103) as MDate,MailStatus from MailDetails where ToId='" + Session["juser"].ToString() + "@erec.com" + "' ";
+        string inbo = "select Id,FromId,ToId,Subject,Contents,convert(varchar(10),MDate,103) as MDate,MailStatus from MailDetails where ToId='" + Session["jp"].ToString() + "@erec.com" + "' ";
         //rdr = con.select(inbo);
         grdinbox.DataSource = con.GetData(inbo);
         grdinbox.DataBind();
-        string count = "select count(*) from MailDetails where  ToId='" + Session["juser"].ToString() + "@erec.com" + "' and MailStatus=1 ";
+        string count = "select count(*) from MailDetails where  ToId='" + Session["jp"].ToString() + "@erec.com" + "' and MailStatus=1 ";
         lblinboxstatus.Text = "(" + con.ExecuteScalar(count).ToString() + ")";
 
     }

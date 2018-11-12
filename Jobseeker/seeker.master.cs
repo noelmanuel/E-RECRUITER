@@ -26,7 +26,7 @@ public partial class Jobseeker_seeker : System.Web.UI.MasterPage
     }
     protected void Button4_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/JobSeeker/contact.aspx");
+        Response.Redirect("~/JobSeeker/academic.aspx");
     }
     protected void Button5_Click(object sender, EventArgs e)
     {
