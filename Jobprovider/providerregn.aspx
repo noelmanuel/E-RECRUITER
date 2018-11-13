@@ -338,8 +338,10 @@
            </br>
            <span ><i style="color:#1ab188; height:55px;"class="fa  fa-globe"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" runat="server" 
            placeholder="Website URL" CssClass="textbox"></asp:TextBox>
-           <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox8"
-            ForeColor="Red" ErrorMessage="Enter Valid URL"></asp:RequiredFieldValidator>
+           <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ForeColor="Red"
+                    ControlToValidate="TextBox8" ErrorMessage="Enter Valid Website URL" 
+                    ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"></asp:RegularExpressionValidator>
+
            </fieldset>
 
 
