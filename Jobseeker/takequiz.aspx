@@ -148,8 +148,11 @@
         <div style="width:100%; height:49px; background-color:#fff; border-bottom: 1px solid #282828">
             <asp:Image  runat="server" ImageUrl="~/images/logo1.jpg" CssClass="log" Width="150" Height="21" />
             <div style=" font-size:medium; margin-left:78.5%; margin-top:-25px;">
-            <asp:Button ID="Button1" runat="server" Text="HOME" Height="30" Width="100" BackColor="#1AB188" BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button2" runat="server" Text="SIGN OUT" Height="30" Width="100" BackColor="Red" BorderStyle="None" ForeColor="White" />
+            <asp:Button ID="Button1" runat="server" Text="HOME" Height="30" Width="100" 
+                    BackColor="#1AB188" BorderStyle="None" ForeColor="White" 
+                    onclick="Button1_Click1" />
+            <asp:Button ID="Button2" runat="server" Text="SIGN OUT" Height="30" Width="100" 
+                    BackColor="Red" BorderStyle="None" ForeColor="White" onclick="Button2_Click1" />
             </div>
             </div>
     

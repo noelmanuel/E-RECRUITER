@@ -55,7 +55,7 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     {
         Response.Redirect("~/Jobprovider/finallist.aspx");
     }
-    protected void Button9_Click(object sender, EventArgs e)
+    protected void btned_c(object sender, EventArgs e)
     {
         Response.Redirect("~/Jobprovider/editprfl.aspx");
     }

@@ -24,14 +24,13 @@ public partial class Jobprovider_finallist : System.Web.UI.Page
         {
             str = "select regno,compid,jobtitle,mark,status from result where finstatus='pending'";
             ds = con.GetData(str);
-            Gridfinallist.DataSource = ds;
-            Gridfinallist.DataBind();
+            gd2.DataSource = ds;
+            gd2.DataBind();
         }
-
     }
-    protected void Gridfinallist_SelectedIndexChanged(object sender, EventArgs e)
+    protected void gd2_SelectedIndexChanged(object sender, EventArgs e)
     {
-        id = Gridfinallist.SelectedDataKey.Value.ToString();
+        id = gd2.SelectedDataKey.Value.ToString();
         str = "update result set finstatus='approve' where regno='" + id + "'";
         con.CreateCommand(str);
     }

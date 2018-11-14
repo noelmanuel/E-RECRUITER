@@ -24,9 +24,15 @@ public partial class Jobprovider_editprfl : System.Web.UI.Page
         Conclass obj = new Conclass();
         psql = "update jobproviderregn set cmpname='" + name.Text + "',cmpdesc='" + desc.Text + "',cmpaddr='" + addr.Text + "',cmpplace='" + place.Text + "',mob='" + mob.Text + "',email='" + email.Text + "',website='" + url.Text + "' where compid='" + Session["jp"].ToString() + "'";
              obj.CreateCommand(psql);
-             
+             name.Text = "";
+             desc.Text = "";
+             addr.Text = "";
+             place.Text = "";
+             mob.Text = "";
+             email.Text = "";
+             url.Text = "";
              Response.Write(" <script>alert('Profile Edited Successfully')</script>");
-             Response.Redirect("~/Jobprovider/editprfl.aspx");
+             
 
     }
 
@@ -34,4 +40,7 @@ public partial class Jobprovider_editprfl : System.Web.UI.Page
     {
         Response.Redirect("~/editprfl.aspx");
     }
+   
+   
+   
 }

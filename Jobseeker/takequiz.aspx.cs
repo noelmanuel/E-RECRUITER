@@ -27,6 +27,10 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
         Label1.Text = Session["r"].ToString();
         //Label2.Text = Convert.ToInt32(index);
         Label2.Text = Session["juser"].ToString();
+        Label3.Text = Session["jp"].ToString();
+        Label4.Text = Session["jb"].ToString();
+
+    
         if (!IsPostBack)
         {
             //DataSet ds = new DataSet();
@@ -142,5 +146,13 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         Response.Redirect("~/JobSeeker/jshome.aspx");
+    }
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Jobseeker/seekerhome.aspx");
+    }
+    protected void Button2_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("~/jslogin.aspx");
     }
 }

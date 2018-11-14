@@ -232,16 +232,16 @@ footer
      
         <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" 
                  Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White" onclick="Button1_Click1" />
+                BorderStyle="None" ForeColor="White" onclick="Button1_Click1" CausesValidation="False" />
         <asp:Button ID="Button2" runat="server" Text="ABOUT" Height="30px" 
                  Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White"  onclick="Button2_Click" />
+                BorderStyle="None" ForeColor="White"  onclick="Button2_Click" CausesValidation="False"  />
         <asp:Button ID="Button3" runat="server" Text="CONTACT" Height="30px" 
                  Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White"  onclick="Button3_Click" />
+                BorderStyle="None" ForeColor="White"  onclick="Button3_Click" CausesValidation="False"  />
         <asp:Button ID="Button4" runat="server" Text="SIGN OUT" Height="30px" 
                  Width="100px" BackColor="#e51616" 
-                BorderStyle="None" ForeColor="White"  onclick="Button4_Click" />
+                BorderStyle="None" ForeColor="White"  onclick="Button4_Click" CausesValidation="False"  />
    
    </p>
     </div>
@@ -252,26 +252,26 @@ footer
     </div>
     <div style=" position: absolute; height: 500px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
         <asp:Button ID="Button5" runat="server" Text="POST JOBS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button5_Click" />
+        ForeColor="White" CssClass="sidebox" onclick="Button5_Click"  CausesValidation="False" />
         <br />
         <asp:Button ID="Button6" runat="server" Text="POST VACANCY" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button6_Click" />
+        ForeColor="White" CssClass="sidebox" onclick="Button6_Click" CausesValidation="False"  />
         <br />
         <asp:Button ID="Button7" runat="server" Text="INTERVIEW" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button7_Click" />
+        ForeColor="White" CssClass="sidebox" onclick="Button7_Click" CausesValidation="False"  />
         <br />
         <asp:Button ID="Button8" runat="server" Text="FINAL LIST" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button8_Click" />
+        ForeColor="White" CssClass="sidebox" onclick="Button8_Click" CausesValidation="False"  />
         <br />
-        <asp:Button ID="Button9" runat="server" Text="EDIT PROFILE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button9_Click" />
+        <asp:Button ID="btned" runat="server" Text="EDIT PROFILE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
+        ForeColor="White" CssClass="sidebox" OnClick="btned_c" CausesValidation="False"  />
         <br />
         <asp:Button ID="Button10" runat="server" Text="PASSWORD CHANGE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
-        ForeColor="White" CssClass="sidebox" onclick="Button10_Click" />
+        ForeColor="White" CssClass="sidebox" onclick="Button10_Click" CausesValidation="False"  />
         <br />
         <asp:Button ID="Button11" runat="server" Text="MESSAGES" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
         ForeColor="White" CssClass="sidebox" 
-            onclick="Button11_Click" />
+            onclick="Button11_Click" CausesValidation="False"  />
     </div>
     <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px">
         <br />
