@@ -109,7 +109,7 @@
 
 
 
-        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%;  margin-top:4%;"><h3>Matrix</h3></div>
+        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%;  margin-top:4%;"><h4 style=" margin-top:5%;">Matrix</h4></div>
         <div style="  height:40px; width:180px; margin-left:40%; margin-top:-4.8%; position:absolute;">
             <asp:TextBox ID="matuni" placeholder="University" runat="server" Height="35px" Width="178px"></asp:TextBox></div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
@@ -127,7 +127,7 @@
 
 
 
-        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:1%;"><h3>High School</h3></div>
+        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:1%;"><h4 style=" margin-top:5%;">High School</h4></div>
         <div style="  height:40px; width:180px; margin-left:40%; margin-top:-4.8%; position:absolute;">
             <asp:TextBox ID="hsuni" placeholder="University" runat="server" Height="35px" Width="178px"></asp:TextBox></div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="hsuni" ForeColor="Red"  ErrorMessage="*" CssClass="hsuni"></asp:RequiredFieldValidator>
@@ -140,7 +140,7 @@
 
 
 
-        <div style="border:1px solid #b96e46; background-color:#b96e46; height:20px; width:250px; margin-left:3%; margin-top:3%;"><h4>Highest Qualification</h4></div>
+        <div style="border:1px solid #b96e46; background-color:#b96e46; height:20px; width:250px; margin-left:3%; margin-top:3%;"><h4 style=" margin-top:1px;">Highest Qualification</h4></div>
         <div style=" border:1px solid #b96e46; height:40px; width:117px; margin-left:3%; margin-top:1%;">
             <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" runat="server" Height="40px" Width="117px" AutoPostBack="True">
             <asp:ListItem Selected hidden>Course</asp:ListItem>
@@ -169,24 +169,30 @@
 
 
 
-        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:3%;"><h3>Additional Qualification</h3></div>
+        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:3%;"><h4 style=" margin-top:5%;">Additional Qualification</h4></div>
         <div style="  height:40px; width:509px; margin-left:40%; margin-top:-4.8%; position:absolute;">
             <asp:TextBox ID="addq" runat="server" Height="35px" Width="506px"></asp:TextBox></div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" ControlToValidate="addq" ForeColor="Red"  runat="server" ErrorMessage="*" CssClass="aq"></asp:RequiredFieldValidator>
 
-        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:1%;"><h3>Work Experience</h3></div>
+        <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:1%;"><h4 style=" margin-top:5%;">Work Experience</h4></div>
         <div style="  height:40px; width:509px; margin-left:40%; margin-top:-4.8%; position:absolute;">
             <asp:TextBox ID="wexp" runat="server" Height="35px" Width="506px"></asp:TextBox></div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator13" ControlToValidate="wexp" runat="server" ForeColor="Red" ErrorMessage="*" CssClass="wex"></asp:RequiredFieldValidator>
 
+            <div style=" border:1px solid #b96e46; background-color:#b96e46; height:40px; width:250px; margin-left:3%; margin-top:1%;"><h4 style=" margin-top:5%;">Upload Your CV</h4></div>
+            <div style="  height:40px; width:509px; margin-left:40%; margin-top:-3%; position:absolute;">
+                <asp:FileUpload ID="FileUpload1" runat="server" /></div>
 
-        <div style=" border:1px solid red; height:40px; width:150px; margin-left:61.8%; margin-top:6%; position:absolute;">
+
+
+
+        <div style=" border:0px solid red; height:40px; width:150px; margin-left:61.8%; margin-top:6%; position:absolute;">
             <asp:Button ID="Button1" runat="server" Text="SUBMIT" Height="40px" 
                 Width="150px" BackColor="#E51616" ForeColor="White" BorderStyle="None" 
                 onclick="Button1_Click" /></div>
-        <div style=" border:1px solid white; height:40px; width:150px; margin-left:80%; margin-top:6%; position:absolute;">
+        <div style=" border:0px solid white; height:40px; width:150px; margin-left:80%; margin-top:6%; position:absolute;">
             <asp:Button ID="Button2" runat="server" Text="CLEAR" Height="40px" 
-                Width="150px" BackColor="#ececec" ForeColor="Black" BorderStyle="None" 
+                Width="150px" BackColor="#d6d6d6" ForeColor="Black" BorderStyle="None" 
                 onclick="Button2_Click" /></div>
 
 

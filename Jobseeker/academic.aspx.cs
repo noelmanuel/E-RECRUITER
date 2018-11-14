@@ -21,6 +21,7 @@ public partial class Jobseeker_academic : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
         if (!IsPostBack)
         {
             DropDownList2.Items.Insert(0, "Branch");
@@ -39,6 +40,7 @@ public partial class Jobseeker_academic : System.Web.UI.Page
    
     protected void Button1_Click(object sender, EventArgs e)
     {
+        FileUpload1.SaveAs( Server.MapPath("~/resume/" + FileUpload1.FileName));
         str = "insert into academic values('" + Session["juser"].ToString() + "','" + matuni.Text + "','" + matcgpa.Text + "','" + matyear.Text + "','" + hsuni.Text + "','" + hscgpa.Text + "','" + hsyear.Text + "','" + DropDownList1.SelectedItem + "','" + DropDownList2.SelectedItem + "','" + deguni.Text + "','" + degcgpa.Text + "','" + degyear.Text + "','" + addq.Text + "','" + wexp.Text + "')";
         con.CreateCommand(str);
         Response.Redirect("~/JobSeeker/seekerhome.aspx");
