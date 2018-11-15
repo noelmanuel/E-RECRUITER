@@ -14,7 +14,7 @@
         {
             padding: 0;
             margin: 0;
-            height: 745px;
+            height: 730px;
         }
         .mainbox1
         {
@@ -213,7 +213,7 @@
         {
             width: 1360px;
             margin: auto;
-            height:60px;
+            height:45px;
         }
 
         .row 
@@ -315,7 +315,7 @@
                 Width="100px" OnClick="Button3_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
             <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
-                Width="130px" OnClick="Button3_click" BackColor="#1AB188" 
+                Width="130px" OnClick="Button6_click" BackColor="#1AB188" 
                 BorderStyle="None" ForeColor="White" />
 
         <div style=" margin-left:70%; margin-top:-45px;">
@@ -407,9 +407,9 @@
             </div>
           
             <div style=" margin-left:80%; position:absolute; margin-top:-4%;">
-                <h4 style="color:#1AB188;">Need Help?</h4>
-                <a href="#help" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
+                <h5 style="color:#1AB188;">COPYRIGHT OWNERS</h5>
+                <a href="#help" style=" text-decoration:none; width:200px; font-size:smaller; color:#fff; margin-top:-14px; position:absolute;">Noel & Muneersha</a></br>
+                
             </div>
         </div>
     </div>
