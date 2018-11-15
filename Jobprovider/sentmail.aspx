@@ -76,11 +76,11 @@
 <asp:Panel ID="pnlcompose" runat="server" Width="1200" Height="530">
 <div style=" height:530px; width:1200px; margin-top:-12%;">
 
-<div style=" background-color:#b96e46; height:30px; width:120px; position:absolute; margin-left:64.2%;">
+<div style=" background-color:#b96e46; height:30px; width:120px; position:absolute; margin-left:76%;">
     <asp:Button ID="Button2" runat="server" Text="Inbox" ForeColor="White" BackColor="#A03040" Height="30" Width="120" CssClass="nob" OnClick="inboxc" /></div>
-<div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:74%;">
+<div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:88%;">
     <asp:Button ID="Button3" runat="server" Text="Compose" ForeColor="White" BackColor="#A03040" Height="30" Width="120" CssClass="nob" OnClick="composec" /></div>
-<div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:84.5%;">
+<div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-left:100%;">
     <asp:Button ID="Button4" runat="server" Text="Sent Mail" ForeColor="White" BackColor="#A03040" Height="30" Width="120" CssClass="nob" OnClick="sentc" /></div>
 
 <div style=" background-color:#f6b440; height:30px; width:120px; position:absolute; margin-top:42%;">

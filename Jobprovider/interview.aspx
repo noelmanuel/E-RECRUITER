@@ -40,16 +40,22 @@ h2
 <div style="margin-top:-15%; margin-left:3%; Height:520px; Width:1315px; border:1px solid White;">
     
     <div style=" height:90%; width:90%; background-color:white; margin-top:1%; margin-left:5%; ">
-    <div style=" height:10%;  width:45%; background-color:#383860; border-radius:50px; margin-top:4%; margin-left:11.7%">
+    <div style=" height:10%;  width:45%; background-color:#383860; border-radius:50px; margin-top:1%; margin-left:12%">
        
-        <h2 style=" position:absolute; margin-left:155px; margin-top:11px;">INTERVIEW SCHEDULE</h2>
+        <h2 style=" position:absolute; margin-left:135px; margin-top:8px;">INTERVIEW SCHEDULE</h2>
         </div>
-     <div style= "border: 2px solid #383860; width:50%; height:56%; margin-left:9%; margin-top:2% ">
+     <div style= "border: 2px solid #383860; width:70%; height:79%; margin-top:1%;">
 
          <div style=" border:1px solid #b96e46; background-color:#A03040; height:40px; width:150px; margin-left:15%;  margin-top:3%;"><h3>JOB TITLE</h3></div>
         <div style="  height:40px; width:180px; margin-left:36%; margin-top:-4.1%; position:absolute;">
-        <asp:DropDownList ID="title"   runat="server" Height="40px" Width="150px"  AutoPostBack="True">
+        <asp:DropDownList ID="title"   runat="server" Height="40px" Width="150px"  
+                AutoPostBack="True" onselectedindexchanged="title_SelectedIndexChanged">
             <asp:ListItem Selected hidden>TITLE</asp:ListItem>
+            </asp:DropDownList></div>
+
+            <div style=" border:1px solid #b96e46; background-color:#A03040; height:40px; width:150px; margin-left:15%;  margin-top:3%;"><h3>NAME</h3></div>
+        <div style="  height:40px; width:180px; margin-left:36%; margin-top:-4.1%; position:absolute;">
+            <asp:DropDownList ID="ddname" runat="server" Height="40px" Width="150px"  AutoPostBack="True">
             </asp:DropDownList></div>
 
             <div style=" border:1px solid #b96e46; background-color:#A03040; height:40px; width:150px; margin-left:15%; margin-top:3%;"><h3>PLACE</h3></div> 

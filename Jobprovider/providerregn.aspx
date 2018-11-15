@@ -184,7 +184,7 @@
         {
             width: 1360px;
             margin: auto;
-            height:40px;
+            height:30px;
         }
 
         .row 
@@ -280,7 +280,7 @@
 
         <div class="secondbox2">
 
-            <p style="margin-left:9%;">
+            <p style="margin-left:29.5%;">
      
                 <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
                 Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
@@ -338,10 +338,8 @@
            </br>
            <span ><i style="color:#1ab188; height:55px;"class="fa  fa-globe"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox8" runat="server" 
            placeholder="Website URL" CssClass="textbox"></asp:TextBox>
-           <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ForeColor="Red"
-                    ControlToValidate="TextBox8" ErrorMessage="Enter Valid Website URL" 
-                    ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"></asp:RegularExpressionValidator>
-
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox8"
+            ForeColor="Red" ErrorMessage="Enter Valid URL"></asp:RequiredFieldValidator>
            </fieldset>
 
 
@@ -362,6 +360,12 @@
                 TextMode="Password" placeholder="Confirm Password" CssClass="textbox"></asp:TextBox>
                 <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox10" ControlToValidate="TextBox11"
                 ForeColor="Red" ErrorMessage="Password Doesn't Match"></asp:CompareValidator>
+               
+                <h4 style=" color:#868584;">Upload Company logo ( Image name should be same as username ):</h4>
+                <asp:FileUpload ID="FileUpload1" runat="server" />
+
+
+
                 </fieldset>
 
        <asp:Button ID="Button4" runat="server" Text="Register" OnClick="btnsub" CssClass="sub" BackColor="#1ab188" ForeColor="White" />

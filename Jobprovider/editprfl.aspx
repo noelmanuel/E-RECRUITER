@@ -30,6 +30,7 @@ h2
  </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
  <div style="width:100%;height:500px;background-color:White; margin-top:-2%; display:inline-block;">
        
 <fieldset style=" width:70%; height:95%; margin-left:130px; margin-top:-14%;">
@@ -78,22 +79,22 @@ h2
         </div>
         </fieldset>
        <div style="  height:40px; width:150px; margin-left:57%; margin-top:2.5%; position:absolute;">
-        <asp:Button ID="Button1" runat="server" OnClick="update"    Text="UPDATE" Height="40px"  Font-Size="15px"
+        <asp:Button ID="btn" runat="server" OnClick="btn_click"    Text="UPDATE" Height="40px"  Font-Size="15px"
                 Width="150px" BackColor="#383860" ForeColor="White" BorderStyle="None"/>
               </div>
 
       <div style="  height:40px; width:150px; margin-left:27%; margin-top:2.5%; position:absolute;">
             <asp:Button ID="Button2" runat="server" OnClick="reset"  Text="CLEAR" Height="40px"   Font-Size="15px"
-                Width="150px" BackColor="#E51616" ForeColor="White" BorderStyle="None"/>
+                Width="150px" BackColor="#E51616" ForeColor="White" BorderStyle="None" />
               </div>
-            
+             
               
 
        
         </div>
   
         
-
+        
 
 
 

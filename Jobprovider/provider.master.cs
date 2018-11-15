@@ -19,6 +19,7 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     {
         
         lblprovider.Text = Session["jp"].ToString();
+        projpimg.ImageUrl = "~/profileimage/" + Session["jp"].ToString() + ".jpg";
     }
 
     protected void Button1_Click1(object sender, EventArgs e)
@@ -29,7 +30,7 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/about.aspx");
+        Response.Redirect("~/Jobprovider/passchange.aspx");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {
@@ -55,20 +56,17 @@ public partial class Jobprovider_provider : System.Web.UI.MasterPage
     {
         Response.Redirect("~/Jobprovider/finallist.aspx");
     }
-    protected void btned_c(object sender, EventArgs e)
+    protected void Button9_Click(object sender, EventArgs e)
     {
         Response.Redirect("~/Jobprovider/editprfl.aspx");
     }
     protected void Button10_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/Jobprovider/passchange.aspx");
+        Response.Redirect("~/Jobprovider/shortlistcv.aspx");  
     }
     protected void Button11_Click(object sender, EventArgs e)
     {
         Response.Redirect("~/Jobprovider/communication.aspx");
     }
-    protected void Button12_click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Jobprovider/Comn.aspx");
-    }
+   
 }
