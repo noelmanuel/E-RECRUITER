@@ -126,14 +126,13 @@
             margin : 0;
             background-color:#fff;
             height:60px;
-            top: 0;
-            left: 0;
+            
             
           }
         
          .firstbox2
         {
-            width:50%;
+            width:49%;
             height:60px;
             margin : 0;
             float : left ;
@@ -143,7 +142,7 @@
             }
          .secondbox2
         {
-            width:50%;
+            width:49%;
             height:60px;
              margin : 0;
             float : left ;
@@ -170,7 +169,7 @@
         {
             width: 1360px;
             margin: auto;
-            height:30px;
+            height:25px;
         }
 
         .row 
@@ -202,6 +201,26 @@
             text-decoration: none;
             margin-left: 10px;
         }
+        
+        .pro
+        {
+            margin-top:10px;
+            margin-left:50px;
+            border:1px solid #24333c;
+            background-color:#f0f0f0;
+            
+            }
+            .proo
+        {
+            text-align:center;
+            border:0px solid #24333c;
+            position:absolute;
+            margin-top:0px;
+            margin-left:10px;
+           font-weight:bold;
+            
+            
+            }
     
     </style> 
             
@@ -239,13 +258,13 @@
         
         
     
-     <p style="margin-left:20.5%;">
+     <p style="margin-left:29.5%;">
 
-                <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button1_Click" />
-                <asp:Button ID="Button2" runat="server" Text="SERVICES" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button2_Click" />
-                <asp:Button ID="Button3" runat="server" Text="ABOUT" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button3_Click" />
-                <asp:Button ID="Button4" runat="server" Text="CONTACT" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button4_Click" />
-                <asp:Button ID="Button5" runat="server" Text="SIGN OUT" Height="30px" Width="100px" BackColor="#e51616" BorderStyle="None" ForeColor="White" onclick="Button5_Click" />
+                <asp:Button ID="Button1" runat="server" Text="HOME" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button1_Click" CausesValidation="False" />
+                <asp:Button ID="Button2" runat="server" Text="CHANGE PASSWORD" Height="30px" Width="155px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button2_Click" CausesValidation="False" />
+                
+                <asp:Button ID="Button4" runat="server" Text="CONTACT" Height="30px" Width="100px" BackColor="#1ab188" BorderStyle="None" ForeColor="White" onclick="Button4_Click" CausesValidation="False" />
+                <asp:Button ID="Button5" runat="server" Text="SIGN OUT" Height="30px" Width="100px" BackColor="#e51616" BorderStyle="None" ForeColor="White" onclick="Button5_Click" CausesValidation="False" />
             </p>
         </div>
     </div>
@@ -253,34 +272,38 @@
 
     
      
-        <div style="top: 271px; left: 260px; position: absolute; height: 74px; width: 1014px">
+        <div style="top: 275px; left: 260px; position: absolute; height: 74px; width: 1014px">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
             
         </div>
-        <div style=" position: absolute; height: 460px; width: 215px;margin-top:8%;  background-color:#e9f79d;">
-            <asp:Button ID="Button6" runat="server" Text="NOTIFICATIONS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button6_Click" />
+        <div style=" position: absolute; height: 440px; width: 215px;margin-top:9%;  background-color:#e9f79d;">
+        <p></p>
+            <asp:Button ID="Button6" runat="server" Text="ACADEMIC DETAILS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button9_Click" CausesValidation="False" />
             <br />
-            <asp:Button ID="Button7" runat="server" Text="EXAM SCHEDULE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button7_Click" />
+            <asp:Button ID="Button7" runat="server" Text="NOTIFICATION" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button6_Click" CausesValidation="False" />
             <br />
-            <asp:Button ID="Button8" runat="server" Text="ONLINE EXAM" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button8_Click" />
+            <asp:Button ID="Button8" runat="server" Text="EXAM SCHEDULE" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button7_Click" CausesValidation="False" />
             <br />
-            <asp:Button ID="Button9" runat="server" Text="SHORT LIST" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button9_Click" />
+            <asp:Button ID="Button9" runat="server" Text="ONLINE EXAM" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button8_Click" CausesValidation="False" />
             <br />
-            <asp:Button ID="Button10" runat="server" Text="RESULTS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button10_Click" />
+            <asp:Button ID="Button10" runat="server" Text="RESULTS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button10_Click" CausesValidation="False" />
             <br />
-            <asp:Button ID="Button11" runat="server" Text="MESSAGES" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button11_Click" />
+            <asp:Button ID="Button11" runat="server" Text="MESSAGES" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button11_Click" CausesValidation="False" />
             <br />
-            <asp:Button ID="Button12" runat="server" Text="CHANGE PASSWORD" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" onclick="Button12_Click" />
+            <asp:Button ID="Button12" runat="server" Text="INTERVIEW DETAILS" Height="50px" 
+                Width="200px" BackColor="#24333c" BorderStyle="None" CssClass="sidebox" 
+                onclick="Button12_Click" ForeColor="White" CausesValidation="False" />
             <br />
             <br />
         </div>
 
-        <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px;" >
+        <div style="width: 236px; top: 120px; left: 16px; position: absolute; height: 61px; " >
             <br />
-            <div style=" background-color:#1ab188; height:50px; width:205px; position:absolute; margin-left:-6%; margin-top:-5%;"
-            <span class="style1"> &nbsp &nbsp Welcome </span>
-            <asp:Label ID="lb1" runat="server" CssClass="style1"></asp:Label>
+            <div style=" background-color:#e9f79d; height:145px; width:213px; position:absolute; margin-left:-6%; border-bottom:1px solid #f3d28d; margin-top:-15.5%;">
+                <asp:Image ID="proimg" runat="server" Height="100" Width="100" CssClass="pro" /><p style=" margin-top:-10px;"></p>
+               <span style=" margin-left:44px; margin-top:-2px; font-weight:bold;">Welcome </span><asp:Label ID="lbljuser" runat="server" Text="Asus" CssClass="proo" ForeColor="#24333C"></asp:Label>
+                
             </div>
         </div>
     </form>

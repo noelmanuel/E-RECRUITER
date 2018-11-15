@@ -183,7 +183,7 @@
         {
             width: 1360px;
             margin: auto;
-            height:40px;
+            height:30px;
         }
 
         .row 
@@ -282,7 +282,7 @@
 
         <div class="secondbox2">
 
-            <p style="margin-left:9%;">
+            <p style="margin-left:29.5%;">
      
                 <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
                 Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
@@ -341,7 +341,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ForeColor="Red" ControlToValidate="RadioButtonList1" runat="server" ErrorMessage="Gender Required"></asp:RequiredFieldValidator>
        </fieldset>
        
-       <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
+       <fieldset style=" width:40%; height:64%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
        <legend>Communication Info</legend></br>
 
            <span ><i style="color:#1ab188; height:55px;"class="fa fa-address-card-o"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox5" placeholder="Address" runat="server" CssClass="textbox"></asp:TextBox>
@@ -365,7 +365,10 @@
 
            <span ><i style="color:#1ab188; height:55px;"class="fa fa-chrome"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox10" type="Email" placeholder="Email" runat="server" CssClass="textbox"></asp:TextBox>
            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ForeColor="Red" ControlToValidate="TextBox10" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Enter Valid Email"></asp:RegularExpressionValidator>
+           <h4 style=" color:#868584; margin-top:-13px;">Upload Photo ( Image name should be same as username ):</h4><asp:FileUpload ID="FileUpload1" runat="server" />
+       
        </fieldset>
+       <p></p>
        <asp:Button ID="Button4" runat="server"  Text="REGISTER" OnClick="btnsub" CssClass="sub" BackColor="#FF1414" ForeColor="White" />
          <asp:Button ID="Button5" runat="server" Text="CLEAR" OnClick="reset" CssClass="cle" 
            BackColor="#1ab188" ForeColor="White" CausesValidation="False" />
