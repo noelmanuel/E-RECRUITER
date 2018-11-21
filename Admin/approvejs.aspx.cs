@@ -36,6 +36,7 @@ public partial class Admin_approvejs : System.Web.UI.Page
         cid = Gridjsapprove.SelectedDataKey.Value.ToString();
         str1 = "update jobseekerregn set status='approved' where usname='" + cid + "'";
         obj.CreateCommand(str1);
+        Response.Write(" <script>window.alert('Jobseeker Approved'); window.location='approveprovider.aspx';</script>");
         appjs();
 
     }

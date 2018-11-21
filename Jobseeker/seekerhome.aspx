@@ -5,9 +5,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-    <div style=" margin-top:-17.1%; margin-left:-4.4%">
+    <div style=" margin-top:-17.2%; margin-left:-4.4%">
     <asp:Image ID="Image1" runat="server" ImageUrl="~/images/job.jpg" 
-        Height="594px" Width="1320px" />
+        Height="625px" Width="1320px" />
         </div>
 </asp:Content>
 

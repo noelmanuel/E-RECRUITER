@@ -4,9 +4,9 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div style=" margin-top:-12.8%; margin-left:-4.1%">
+<div style="margin-left:-4.5%; position:absolute; margin-top:-22.8%;">
     <asp:Image ID="Image1" runat="server" ImageUrl="~/images/lap.jpg" 
-        Height="575px" Width="1275px" />
+        Height="625px" Width="1283px" />
         </div>
 </asp:Content>
 

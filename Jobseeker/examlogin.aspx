@@ -29,8 +29,11 @@
 <div style=" display:inline-block; width:120px; height:40px; border:1px solid white;">
     <asp:DropDownList ID="ddjob" AutoPostBack="true" runat="server" Height="45" Width="120">
     </asp:DropDownList>
-</div>
 
+
+</div>
+<asp:RequiredFieldValidator
+        ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtrn" ForeColor="Red" ErrorMessage="Enter Register no"></asp:RequiredFieldValidator>
 </div>
 <br />
 <br />
@@ -38,7 +41,9 @@
 <div style=" display:inline-block; width:120px; height:40px; margin-left:23%; border:1px solid white;">
     <asp:Button ID="btnsub" OnClick="btnsub_Click" runat="server" Text="Start Exam" Height="40" Width="120" BackColor="#1AB188" ForeColor="White" BorderStyle="None" /></div> &nbsp &nbsp
 <div style=" display:inline-block; width:120px; height:40px; border:1px solid White;">
-    <asp:Button ID="Button2" runat="server" Text="Exit" Height="40" Width="120" BackColor="Red" ForeColor="White" BorderStyle="None" /></div>
+    <asp:Button ID="Button2" runat="server" Text="Exit" Height="40" Width="120" 
+        OnClick="exit" BackColor="Red" ForeColor="White" BorderStyle="None" 
+        CausesValidation="False" /></div>
 <p></p>
 </div>
 

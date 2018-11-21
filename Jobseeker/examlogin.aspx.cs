@@ -20,6 +20,7 @@ public partial class Jobseeker_examlogin : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
         if (!IsPostBack)
         {
             str = "select cmpname from jobproviderregn";
@@ -58,11 +59,29 @@ public partial class Jobseeker_examlogin : System.Web.UI.Page
 
     protected void btnsub_Click(object sender, EventArgs e)
     {
-        Session["r"] = txtrn.Text;
-        Session["jp"] = ddcomp.SelectedItem.ToString();
-        Session["jb"] = ddjob.SelectedItem.ToString();
+        
+        string j = "select regno from result where usname='" + Session["juser"].ToString() +"'";
+        
+       
+        rd = con.ReadData(j);
+        if(rd.Read())
+        {
 
-        Response.Redirect("~/JobSeeker/takequiz.aspx");
+            Response.Write(" <script>alert('Exam already attended')</script>");
+            txtrn.Text = "";
+        }
+        else
+        {
+            Session["r"] = txtrn.Text;
+            Session["jp"] = ddcomp.SelectedItem.ToString();
+            Session["jb"] = ddjob.SelectedItem.ToString();
 
+
+            Response.Redirect("~/Jobseeker/takequiz.aspx");
+        }
+    }
+    protected void exit(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Jobseeker/seekerhome.aspx");
     }
 }

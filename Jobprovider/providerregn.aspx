@@ -234,7 +234,7 @@
         {
             position:absolute;
             margin-left:81.5%;
-            margin-top:-4%;
+            margin-top:-3%;
             height:50px;
             width:200px;
             border:none;
@@ -244,7 +244,7 @@
         {
             position:absolute;
             margin-left:74%;
-            margin-top:-4%;
+            margin-top:-3%;
             height:50px;
             width:110px;
             border:none;
@@ -343,7 +343,7 @@
            </fieldset>
 
 
-            <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-35.3%; margin-left:53%; ">
+            <fieldset style=" width:40%; height:60%; position:absolute; margin-top:-34.8%; margin-left:53%; ">
        <legend>Accounts Info</legend></br>
                 <span ><i style="color:#1ab188; height:55px;"class="fa fa-user"></i></span>&nbsp &nbsp<asp:TextBox ID="TextBox9" runat="server"
                  placeholder="Username" CssClass="textbox"></asp:TextBox>

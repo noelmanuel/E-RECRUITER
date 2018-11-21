@@ -43,7 +43,7 @@ public partial class Jobseeker_academic : System.Web.UI.Page
         FileUpload1.SaveAs( Server.MapPath("~/resume/" + FileUpload1.FileName));
         str = "insert into academic values('" + Session["juser"].ToString() + "','" + matuni.Text + "','" + matcgpa.Text + "','" + matyear.Text + "','" + hsuni.Text + "','" + hscgpa.Text + "','" + hsyear.Text + "','" + DropDownList1.SelectedItem + "','" + DropDownList2.SelectedItem + "','" + deguni.Text + "','" + degcgpa.Text + "','" + degyear.Text + "','" + addq.Text + "','" + wexp.Text + "')";
         con.CreateCommand(str);
-        Response.Redirect("~/JobSeeker/seekerhome.aspx");
+        Response.Write(" <script>window.alert('Academic Added Successfully'); window.location='academic.aspx';</script>");
     }
     protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
     {

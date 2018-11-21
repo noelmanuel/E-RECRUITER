@@ -38,6 +38,7 @@ public partial class Admin_approveprovider : System.Web.UI.Page
         pid = Gridproviderapprove.SelectedDataKey.Value.ToString();
         prstr = "update jobproviderregn set status='approved' where compid='" + pid + "'";
         probj.CreateCommand(prstr);
+        Response.Write(" <script>window.alert('Jobprovider Approved'); window.location='approveprovider.aspx';</script>");
         prov();
 
     }

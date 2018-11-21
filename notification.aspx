@@ -165,6 +165,12 @@
         {
             background-color: #3e8e41;
          }
+         
+         .note
+         {
+              margin-left:60%;
+              margin-top:5%;
+         }            }
         
     </style>
 </head>
@@ -261,8 +267,10 @@
 
        </div>
         </div>
+        <div><asp:Image ID="Image2" runat="server" ImageUrl="~/images/noot.jpg" CssClass="note" /></div>
+            
 
-<div style="width:100%; height:38px; background-color:#282828; margin-top:42.2%;"></div>
+<div style="width:100%; height:45px; background-color:#282828; margin-top:18%;"><p style=" color:#1ab188; margin-left:85%; position:absolute; margin-top:5px; font-size:small;">COPYRIGHT OWNERS<br /> Noel & Muneersha</p></div>
     
     
     

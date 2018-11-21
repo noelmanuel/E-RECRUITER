@@ -32,6 +32,6 @@ public partial class Jobprovider_editprfl : System.Web.UI.Page
 
     protected void reset(object sender, EventArgs e)
     {
-        Response.Redirect("~/editprfl.aspx");
+        Response.Redirect("~/Jobprovider/editprfl.aspx");
     }
 }

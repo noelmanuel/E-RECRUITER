@@ -143,7 +143,7 @@
         }
         .sidebox
         {
-            margin-top:5px;
+            margin-top:13px;
             margin-left:7px;
            
             
@@ -165,6 +165,7 @@ footer
             width: 1360px;
             margin: auto;
             height:30px;
+            color:Gray;
         }
 
         .row 
@@ -200,7 +201,9 @@ footer
         .pro
         {
             
-            border:1px solid #24333c;
+            border-bottom:1px solid #24333c;
+            border-top:1px solid #24333c;
+            border-right:1px solid #e9f79d;
             background-color:#f0f0f0;
            
             margin-top:10px;
@@ -275,7 +278,7 @@ footer
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>
-    <div style=" position: absolute; height:453px; width: 215px;margin-top:9%;  background-color:#e9f79d">
+    <div style=" position: absolute; height:500px; width: 215px;margin-top:8%;  background-color:#e9f79d">
     <br />
     <br />
         <asp:Button ID="Button5" runat="server" Text="POST JOBS" Height="50px" Width="200px" BackColor="#24333c" BorderStyle="None" 
@@ -300,13 +303,13 @@ footer
         ForeColor="White" CssClass="sidebox" OnClick="Button11_Click" CausesValidation="False" />
     </div>
     <div style=" background-color:#e9f79d; height:150px; width:214px; position:absolute;  border-bottom:1px solid #f3d28d;">
-    <asp:Image ID="projpimg" runat="server" Height="100" Width="212" CssClass="pro" /><p style=" margin-top:-5px;"></p>
+    <asp:Image ID="projpimg" runat="server" Height="100" Width="213" CssClass="pro" /><p style=" margin-top:-5px;"></p>
         <span style="font-weight:bold; margin-left:50px;">Welcome </span><asp:Label ID="lblprovider" runat="server" Text="Asus" CssClass="proo" ForeColor="#24333C" ></asp:Label>
     </div>
     </form>
  <footer>
     <div class="container">
-    
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                                                      @Jobprovider
         </div>
     
 </footer>

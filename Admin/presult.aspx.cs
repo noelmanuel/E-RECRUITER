@@ -36,6 +36,7 @@ public partial class Admin_presult : System.Web.UI.Page
         id = gd1.SelectedDataKey.Value.ToString();
         str = "update result set status='qualified' where regno='" + id + "'";
         con.CreateCommand(str);
+        Response.Write(" <script>window.alert('Jobseeker Exam Qualified'); window.location='presult.aspx';</script>");
         appresult();
     }
 }

@@ -12,17 +12,26 @@ public partial class contact : System.Web.UI.Page
 
     }
 
-    protected void Button2_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/JobSeeker/jshome.aspx");
-    }
-    protected void Button1_Click1(object sender, EventArgs e)
-    {
-        Response.Redirect("~/Jobseeker/seekerhome.aspx");
-    }
-    protected void Button2_Click1(object sender, EventArgs e)
+    protected void Button1_click(object sender, EventArgs e)
     {
         Response.Redirect("~/jslogin.aspx");
+    }
+    protected void Button2_click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/contact.aspx");
+    }
+    protected void Button3_click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/about.aspx");
+    }
+    protected void Button4_click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/notification.aspx");
+    }
+
+    protected void Button7_click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/about.aspx");
     }
 }
 

@@ -40,24 +40,29 @@ h2
         <div style=" border:1px solid #b96e46; background-color:#A03040; height:50px; width:180px; margin-left:15%; margin-top:1.2%;"><h3>COMPANY NAME</h3></div> 
         <div style="  height:40px; width:180px;  margin-top:-4.7%; margin-left:40%; position:absolute;">
         <asp:TextBox ID="name"  runat="server" Height="35px" Width="200px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="name" ForeColor="Red" ErrorMessage="Enter your name"></asp:RequiredFieldValidator>
            </div>
            <div style=" border:1px solid #b96e46; background-color:#A03040; height:50px; width:180px; margin-left:15%; margin-top:1.2%;"><h3>DESCRIPTION</h3></div> 
         <div style="  height:40px; width:180px;  margin-top:-4.7%; margin-left:40%; position:absolute;">
         <asp:TextBox ID="desc"  runat="server" Height="35px" Width="200px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="desc" ForeColor="Red" ErrorMessage="Enter Description"></asp:RequiredFieldValidator>
            </div>
            <div style=" border:1px solid #b96e46; background-color:#A03040; height:50px; width:180px; margin-left:15%; margin-top:1.2%;"><h3>COMMUNICATION ADDRESS</h3></div> 
         <div style="  height:40px; width:180px;  margin-top:-4.7%; margin-left:40%; position:absolute;">
         <asp:TextBox ID="addr"  runat="server" Height="35px" Width="200px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="addr" ForeColor="Red" ErrorMessage="Enter the address"></asp:RequiredFieldValidator>
           
         </div>
         <div style=" border:1px solid #b96e46; background-color:#A03040; height:50px; width:180px; margin-left:15%; margin-top:1.2%;"><h3>PLACE</h3></div> 
         <div style="  height:40px; width:180px;  margin-top:-4.7%; margin-left:40%; position:absolute;">
         <asp:TextBox ID="place"  runat="server" Height="35px" Width="200px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="place" ForeColor="Red" ErrorMessage="Enter the place"></asp:RequiredFieldValidator>
           
         </div>
         <div style=" border:1px solid #b96e46; background-color:#A03040; height:50px; width:180px; margin-left:15%; margin-top:1.2%;"><h3>MOBILE NUMBER</h3></div> 
         <div style="  height:40px; width:180px;  margin-top:-4.7%; margin-left:40%; position:absolute;">
         <asp:TextBox ID="mob"  runat="server" Height="35px" Width="200px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="mob" ForeColor="Red" ErrorMessage="Enter mobile no"></asp:RequiredFieldValidator>
           
         </div>
         <div style=" border:1px solid #b96e46; background-color:#A03040; height:50px; width:180px; margin-left:15%; margin-top:1.2%;"><h3>EMAIL</h3></div> 
@@ -80,12 +85,12 @@ h2
         </fieldset>
        <div style="  height:40px; width:150px; margin-left:57%; margin-top:2.5%; position:absolute;">
         <asp:Button ID="btn" runat="server" OnClick="btn_click"    Text="UPDATE" Height="40px"  Font-Size="15px"
-                Width="150px" BackColor="#383860" ForeColor="White" BorderStyle="None"/>
+                Width="150px" BackColor="#383860" ForeColor="White" CausesValidation="true" BorderStyle="None"/>
               </div>
 
       <div style="  height:40px; width:150px; margin-left:27%; margin-top:2.5%; position:absolute;">
             <asp:Button ID="Button2" runat="server" OnClick="reset"  Text="CLEAR" Height="40px"   Font-Size="15px"
-                Width="150px" BackColor="#E51616" ForeColor="White" BorderStyle="None" />
+                Width="150px" BackColor="#E51616" ForeColor="White" BorderStyle="None" CausesValidation="False" />
               </div>
              
               

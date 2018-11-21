@@ -33,5 +33,6 @@ public partial class Jobprovider_finallist : System.Web.UI.Page
         id = gd2.SelectedDataKey.Value.ToString();
         str = "update result set finstatus='approve' where regno='" + id + "'";
         con.CreateCommand(str);
+        Response.Write(" <script>window.alert('Jobseeker Approved for Interview'); window.location='finallist.aspx';</script>");
     }
 }

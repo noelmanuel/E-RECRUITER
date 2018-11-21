@@ -66,6 +66,11 @@ public partial class Admin_addquestion : System.Web.UI.Page
         txtch3.Text = "";
         txtch4.Text = "";
         txtqns.Text = "";
+        Response.Write(" <script>window.alert('Question Added Successfully'); window.location='addquestion.aspx';</script>");
 
+    }
+    protected void clr(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Admin/addquestion.aspx");
     }
 }

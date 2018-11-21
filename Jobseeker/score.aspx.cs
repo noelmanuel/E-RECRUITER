@@ -32,4 +32,14 @@ public partial class Jobseeker_score : System.Web.UI.Page
         }
 
     }
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+        Response.Write(" <script>window.alert('Exam Session Out'); window.location='examlogin.aspx';</script>");
+    }
+   
+
+    protected void Button2_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Jobseeker/seekerhome.aspx");
+    }
 }

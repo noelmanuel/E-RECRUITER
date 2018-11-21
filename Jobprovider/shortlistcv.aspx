@@ -27,7 +27,7 @@
 <br />
 <br />
 
-<h3 style=" color:#1ab188;">SHORT LISTED CANDIDATE CV</h3>
+<h3 style=" color:#383860;">SHORT LISTED CANDIDATE CV</h3>
 
 <div style=" width:200px; height:50px; border:1px solid black; display:inline-block; margin-left:10%; text-align:center;"><h4>Candidate Name</h4></div> &nbsp &nbsp &nbsp &nbsp
 <div style=" width:200px; height:50px; border:1px solid black; display:inline-block; text-align:center;"> <h4>Download</h4></div>
@@ -36,8 +36,8 @@
 <div style=" width:200px; height:50px; border:1px solid white; margin-left:30px;  position:absolute; display:inline-block;">
     <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Red" CssClass="err">Download CV</asp:HyperLink></div><br /><br />
 <div style=" width:200px; height:50px; border:none; display:inline-block;">
-    <asp:Button ID="Button1" runat="server" Text="Button"  Height="50" Width="200" 
-        onclick="Button1_Click" BackColor="#1AB188" ForeColor="White" BorderStyle="None" CssClass="bt" />
+    <asp:Button ID="Button1" runat="server" Text="NEXT"  Height="50" Width="200" 
+        onclick="Button1_Click" BackColor="#383860" ForeColor="White" BorderStyle="None" CssClass="bt" />
 </div>
     
     

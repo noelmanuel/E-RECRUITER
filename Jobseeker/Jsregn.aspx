@@ -233,7 +233,7 @@
         {
             position:absolute;
             margin-left:81.5%;
-            margin-top:-4%;
+            margin-top:-2%;
             height:50px;
             width:200px;
             border:none;
@@ -243,7 +243,7 @@
         {
             position:absolute;
             margin-left:74%;
-            margin-top:-4%;
+            margin-top:-2%;
             height:50px;
             width:110px;
             border:none;

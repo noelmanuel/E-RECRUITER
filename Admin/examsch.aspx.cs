@@ -57,7 +57,7 @@ public partial class Admin_examsch : System.Web.UI.Page
     {
         sq = "insert into schexam(compid,jobtitle,dt,syll)values('" + ddcomp.SelectedItem + "','" + ddjob.SelectedItem + "','" + txtdt.Text + "','" + txtsyll.Text + "')";
         con.CreateCommand(sq);
-        Response.Write(" <script>alert('Check Schedule')</script>");
+        Response.Write(" <script>alert('Exam Schedule Added and Check Schedule')</script>");
 
     }
 

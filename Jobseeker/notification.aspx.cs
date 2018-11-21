@@ -57,7 +57,7 @@ public partial class Jobseeker_notification : System.Web.UI.Page
         string date1 = System.DateTime.Now.ToString("MM/dd/yyyy");
         st = "insert into sendappln values('" + Session["juser"].ToString() + "','" + st1 + "','" + s + "','" + date1 + "','applied')";
         con.CreateCommand(st);
-        Response.Redirect("~/Jobseeker/seekerhome.aspx");
+        Response.Write(" <script>window.alert('Job Applied Successfully'); window.location='seekerhome.aspx';</script>");
     }
 }
 

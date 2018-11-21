@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="takequiz.aspx.cs" Inherits="Jobseeker_takequiz" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="report.aspx.cs" Inherits="Jobseeker_report" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html>
-<head runat="server">
+<head id="Head1" runat="server">
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <style type="text/css">
@@ -130,7 +130,7 @@
 </head>
 
 <body style=" margin:0; border:0; padding:0;">
-<form runat="server">
+<form id="Form1" runat="server">
     <div style=" font-size:0;">
 
         <div style="width:100%; height:35px; background-color:#282828;">
@@ -146,7 +146,7 @@
 
 
         <div style="width:100%; height:49px; background-color:#fff; border-bottom: 1px solid #282828">
-            <asp:Image  runat="server" ImageUrl="~/images/logo1.jpg" CssClass="log" Width="150" Height="21" />
+            <asp:Image ID="Image1"  runat="server" ImageUrl="~/images/logo1.jpg" CssClass="log" Width="150" Height="21" />
             <div style=" font-size:medium; margin-left:78.5%; margin-top:-25px;">
             <asp:Button ID="Button1" runat="server" Text="HOME" Height="30" Width="100" 
                     BackColor="#1AB188" BorderStyle="None" ForeColor="White" 
@@ -159,67 +159,25 @@
         <div style="width:13%; height:600px; background-color:black; float:left;">
         
             <div style="width:100%; height:160px; background-color:black; border-bottom:1px solid #282828;">
-                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/EXAMM.jpg" Height="130" Width="" CssClass="mg" /></div>
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/EXAMM.jpg" Height="130" Width="" CssClass="mg" /></div>
             <div style="width:100%; height:380px; background-color:black; text-align:center;">
                 
                 <div style=" width:100%; height:30px; border-bottom:1px solid #282828; margin-top:30%;"><a href="#" class="LNKDAS">DASHBOARD</a></div>
-                <div style=" width:100%; height:30px; border-bottom:1px solid #282828; margin-top:30%;"><a href="#" class="LNKDAS">DEMO TEST</a></div>
+                
                 <div style=" width:100%; height:30px; border-bottom:1px solid #282828; margin-top:30%;"><a href="#" class="LNKDAS">INSTRUTIONS</a></div>
                 <div style=" width:100%; height:30px;  margin-top:30%;"><a href="#" class="LNKDAS">REPORT</a></div>
             </div>
         
         </div>
-        <div style="width:68%; height:600px; background-color:#e5e5e5; display:inline-block; ">
-        <div style=" margin-left:5%; font-size:medium;">
-        <asp:GridView ID="grdquestions" runat="server" AutoGenerateColumns="False" 
-            BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" 
-            CellPadding="3" CellSpacing="1" DataKeyNames="code" GridLines="None" 
-            onselectedindexchanged="grdquestions_SelectedIndexChanged" 
-            
-                
-                
-                
-                style="top: 136px; position: absolute; height: 418px; width: 983px; left: 224px;">
-            <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
-            <Columns>
-                <asp:TemplateField>
-                    <HeaderTemplate>
-                        QUESTIONS
-                    </HeaderTemplate>
-                    <ItemTemplate>
-                        <asp:Label ID="lbl2" runat="server" Text='<%#Eval("qns")%>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle BackColor="#F1701B" />
-                    <ItemStyle CssClass="bo" />
-                </asp:TemplateField>
-                <asp:TemplateField>
-                    <HeaderTemplate>
-                        OPTIONS
-                    </HeaderTemplate>
-                    <ItemTemplate>
-                        <asp:RadioButton ID="rdb1" runat="server" GroupName="g1" 
-                            Text='<%#Eval("ch1")%>' /> &nbsp &nbsp 
-                        <asp:RadioButton ID="rdb2" runat="server" GroupName="g1" 
-                            Text='<%#Eval("ch2")%>' /> &nbsp &nbsp
-                        <asp:RadioButton ID="rdb3" runat="server" GroupName="g1" 
-                            Text='<%#Eval("ch3")%>' /> &nbsp &nbsp
-                        <asp:RadioButton ID="rdb4" runat="server" GroupName="g1" 
-                            Text='<%#Eval("ch4")%>' /> &nbsp &nbsp
-                    </ItemTemplate>
-                    <HeaderStyle BackColor="#F0CE30" />
-                </asp:TemplateField>
-            </Columns>
-            <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
-            <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
-            <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
-        </asp:GridView>
-        
-        <div style=" margin-top:36%;position:absolute; margin-left:48.5%;">
-            <asp:Button ID="Button3" runat="server" Text="Submit" Height="30" Width="100" BackColor="#1AB188" OnClick="Button1_Click" BorderStyle="None" ForeColor="White" />
-            <asp:Button ID="Button4" runat="server" Text="Stop" Height="30" Width="100" BackColor="Red" BorderStyle="None" ForeColor="White" />
-            </div>
-            </div>
+        <div style="width:68%; height:600px; background-color:#e5e5e5; display:inline-block; font-size:medium; ">
+        <div style=" margin-left:2%;">
+        <h3>REPORT</h3>
+            <asp:DropDownList ID="DropDownList1" runat="server" ForeColor="Red" Height="40" Width="250">
+            </asp:DropDownList><p></p>
+            <asp:TextBox ID="TextBox1" runat="server" Height="40" Width="250"></asp:TextBox><br /><p></p>
+            <asp:Button ID="Button3" runat="server" Height="40" Width="100" Text="Submit" 
+                ForeColor="White" BackColor="#1AB188" onclick="Button3_Click" />
+        </div>
         </div>
         <div style="width:19%; height:600px; background-color:black; display:inline-block; float:right; font-size:0;">
 
@@ -243,21 +201,10 @@
                 <asp:Label ID="Label6" runat="server" Text="5" ForeColor="White" 
                     Font-Size="Medium" CssClass="lb2"></asp:Label>
             </div><br />
-            <div style="width:100%; height:149px; background-color:#282828; font-size:larger; border-bottom:1px solid #999898;">
-                <asp:ScriptManager ID="ScriptManager2" runat="server">
-                </asp:ScriptManager>
-                <asp:Timer ID="Timer1" runat="server" ontick="Timer1_Tick" Interval="120000">
-                </asp:Timer>
-                <asp:Label ID="Label7" runat="server" 
-                    ForeColor="White" BackColor="Red"  style="margin-top: 1px; font-size:medium;" 
-                     BorderStyle="None"></asp:Label>
-            </div><br />
-
-
+            <div style="width:100%; height:149px; background-color:#282828; border-bottom:1px solid #999898;"></div><br />
             <div style="width:100%; height:148px; background-color:#282828; border-bottom:1px solid #999898;">
             <h5 style=" font-size:medium; position:absolute; color:#CEBF91; margin-left:6%; margin-top:10px;">Server Statistics</h5>
-                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/server.jpg" CssClass="server" />
-            </div>
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/server.jpg" CssClass="server" /></div>
         </div>
 
         

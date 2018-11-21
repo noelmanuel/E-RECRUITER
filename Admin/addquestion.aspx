@@ -48,6 +48,7 @@
         Width="200px" CssClass="ba" BorderStyle="None"></asp:Label></div> &nbsp &nbsp &nbsp &nbsp
 <div style=" display:inline-block; width:500px; height:40px; border:1px solid white;">
     <asp:TextBox ID="txtqns" runat="server" Height="40" Width="500"></asp:TextBox></div>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtqns" ForeColor="Red" ErrorMessage="Enter the question"></asp:RequiredFieldValidator>
 </div>
 
 <br />
@@ -56,13 +57,17 @@
     <asp:Label ID="Label4" runat="server" Text="Options" Height="40px" 
         Width="200px" CssClass="ba" BorderStyle="None"></asp:Label></div> &nbsp &nbsp &nbsp &nbsp
 <div style=" display:inline-block; width:108px; height:40px; border:1px solid white;">
-    <asp:TextBox ID="txtch1" runat="server" Height="40" Width="108" placeholder="Option1"></asp:TextBox></div> &nbsp &nbsp 
+    <asp:TextBox ID="txtch1" runat="server" Height="40" Width="108" placeholder="Option1"></asp:TextBox></div>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtch1" ForeColor="Red" ErrorMessage="*"></asp:RequiredFieldValidator>  
 <div style=" display:inline-block; width:108px; height:40px; border:1px solid white;">
-    <asp:TextBox ID="txtch2" runat="server" Height="40" Width="108" placeholder="Option2"></asp:TextBox></div> &nbsp &nbsp 
+    <asp:TextBox ID="txtch2" runat="server" Height="40" Width="108" placeholder="Option2"></asp:TextBox></div>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtch2" ForeColor="Red" ErrorMessage="*"></asp:RequiredFieldValidator>  
 <div style=" display:inline-block; width:108px; height:40px; border:1px solid white;">
-    <asp:TextBox ID="txtch3" runat="server" Height="40" Width="108" placeholder="Option3"></asp:TextBox></div> &nbsp &nbsp 
+    <asp:TextBox ID="txtch3" runat="server" Height="40" Width="108" placeholder="Option3"></asp:TextBox></div>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtch3" ForeColor="Red" ErrorMessage="*"></asp:RequiredFieldValidator> 
 <div style=" display:inline-block; width:108px; height:40px; border:1px solid white;">
-    <asp:TextBox ID="txtch4" runat="server" Height="40" Width="108" placeholder="Option4"></asp:TextBox></div> &nbsp &nbsp 
+    <asp:TextBox ID="txtch4" runat="server" Height="40" Width="108" placeholder="Option4"></asp:TextBox></div>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtch4" ForeColor="Red" ErrorMessage="*"></asp:RequiredFieldValidator>  
 </div>
 <br />
 
@@ -72,6 +77,7 @@
         Width="200px" CssClass="ba" BorderStyle="None"></asp:Label></div> &nbsp &nbsp &nbsp &nbsp
 <div style=" display:inline-block; width:200px; height:40px; border:1px solid white;">
     <asp:TextBox ID="txtans" runat="server" Height="40" Width="500"></asp:TextBox></div>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtans" ForeColor="Red" ErrorMessage="Enter your Answer"></asp:RequiredFieldValidator>
 </div>
 <br />
 <br />
@@ -82,7 +88,7 @@
         Width="120" ForeColor="White" BackColor="#1AB188" BorderStyle="None" /></div> &nbsp &nbsp
 <div style=" display:inline-block; width:120px; height:40px; border:1px solid White;">
     <asp:Button ID="Button2" runat="server" Text="Clear" Height="40" Width="120" 
-        ForeColor="White" BackColor="#1AB188" BorderStyle="None" /></div>
+        ForeColor="White" BackColor="#1AB188" BorderStyle="None" OnClick="clr" CausesValidation="False" /></div>
 </div>
 
 </div>

@@ -97,8 +97,8 @@ public partial class Admin_sendexsch : System.Web.UI.Page
 
             str = "insert into sendexamsch values('" + number + "','" + username + "','" + Label1.Text + "','" + Label2.Text + "','" + System.DateTime.Now.ToString() + "')";
             con.CreateCommand(str);
-            Response.Write(" <script>alert('Schedule dates successfully submitted')</script>");
-            
+            Response.Write(" <script>window.alert('Schedule Successfully Sent To Candidates'); window.location='adminhome.aspx';</script>");
+           
         }
         
 

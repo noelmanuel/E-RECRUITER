@@ -32,7 +32,7 @@ public partial class about : System.Web.UI.Page
     }
     protected void Button4_click(object sender, EventArgs e)
     {
-        Response.Redirect("~/about.aspx");
+        Response.Redirect("~/notification.aspx");
     }
 
     protected void Button7_click(object sender, EventArgs e)

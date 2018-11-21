@@ -170,9 +170,9 @@
 
         .container 
         {
-            width: 1360px;
+            width: 100%;
             margin: auto;
-            height:60px;
+            height:30px;
         }
 
         .row 
@@ -248,12 +248,12 @@
             <asp:Button ID="Button2" runat="server"   
              Onclick="Button1_Click" Height="30px" Text="HOME" 
                 Width="100px" BackColor="#1ab188" 
-                BorderStyle="None" ForeColor="White"/>
+                BorderStyle="None" ForeColor="White" CausesValidation="False" />
         
             <asp:Button ID="Button3" runat="server" Text="SIGN OUT"
              onclick="Button5_Click1" Height="30px"  
                 Width="100px" BackColor="#e51616" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White" CausesValidation="False" />
             
         </p>
                 </div>
@@ -261,34 +261,34 @@
 
 <div>
 
-    <div style=" margin:0px;position: absolute; height: 230px; width: 250px; background-color:#e9f79d; margin-top:-16px;">
+    <div style=" margin:0px;position: absolute; height: 240px; width: 250px; background-color:#e9f79d; margin-top:-16px;">
         <asp:Image ID="Image1" runat="server" ImageUrl="~/images/ADMINPIC.jpg" Height="230px" Width="250" />
     </div >
     
     
-    <div style=" position: absolute; height: 390px; width: 250px;margin-top:12.5%;  background-color:#e9f79d;">
+    <div style=" position: absolute; height: 405px; width: 250px;margin-top:14.5%;  background-color:#e9f79d;">
         
         
-        <asp:Button ID="Button6" runat="server" Text="JOB PROVIDERS" Onclick="Button6_Click" Height="50px" Width="200px" 
+        <asp:Button ID="Button6" runat="server" Text="JOB PROVIDERS" CausesValidation="False" Onclick="Button6_Click" Height="50px" Width="200px" 
         BackColor="#24333c" BorderStyle="None" ForeColor="White" CssClass="sidebox" />
         
-        <asp:Button ID="Button7" runat="server" Text="JOB SEEKER" Height="50px" 
+        <asp:Button ID="Button7" runat="server" Text="JOB SEEKER" CausesValidation="False" Height="50px" 
             Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White"
             onclick="Button7_Click" CssClass="sidebox"  />
         
-        <asp:Button ID="Button8" runat="server" Text="SCHEDULES" Height="50px" 
+        <asp:Button ID="Button8" runat="server" Text="SCHEDULES" CausesValidation="False" Height="50px" 
             Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" 
             Onclick="Button8_Click" CssClass="sidebox"/>
         
-        <asp:Button ID="Button9" runat="server" Text="ADD QUESTION" Height="50px" 
+        <asp:Button ID="Button9" runat="server" Text="ADD QUESTION" CausesValidation="False" Height="50px" 
             Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" 
             Onclick="Button9_Click" CssClass="sidebox"/>
         
-        <asp:Button ID="Button10" runat="server" Text="SHORT LIST" Height="50px" 
+        <asp:Button ID="Button10" runat="server" Text="SHORT LIST" CausesValidation="False" Height="50px" 
             Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" 
             Onclick="Button10_Click" CssClass="sidebox"/>
         
-        <asp:Button ID="Button11" runat="server" Text="MESSAGES" Height="50px" 
+        <asp:Button ID="Button11" runat="server" Text="MESSAGES" CausesValidation="False" Height="50px" 
             Width="200px" BackColor="#24333c" BorderStyle="None" ForeColor="White" 
             Onclick="Button11_Click" CssClass="sidebox" />
         
@@ -314,11 +314,7 @@
     <div class="container">
 
         
-            <div style=" margin-left:80%; position:absolute; margin-top:-1.5%;">
-                <h4 style="color:#1AB188;">Need Help?</h4>
-                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Help</a></br>
-                <a href="#contact.aspx" style=" text-decoration:none; color:#fff; margin-top:-14px; position:absolute;">Contact</a>
-            </div>
+           
         </div>
     
 </footer>

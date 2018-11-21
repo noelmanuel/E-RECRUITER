@@ -82,13 +82,9 @@ public partial class jslogin : System.Web.UI.Page
     {
         Response.Redirect("~/about.aspx");
     }
-    protected void Button6_click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/notification.aspx");
-    }
     protected void Button4_click(object sender, EventArgs e)
     {
-        
+        Response.Redirect("~/notification.aspx");
     }
 
     protected void Button7_click(object sender, EventArgs e)

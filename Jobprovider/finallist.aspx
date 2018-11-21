@@ -15,23 +15,23 @@
             <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
             <Columns>
                 <asp:BoundField DataField="regno" HeaderText="Register No:" >
-                <HeaderStyle BackColor="#1AB188" />
+                <HeaderStyle BackColor="#383860" />
                 <ItemStyle HorizontalAlign="Center" />
                 </asp:BoundField>
                 <asp:BoundField DataField="compid" HeaderText="Company" >
-                <HeaderStyle BackColor="#1AB188" HorizontalAlign="Center" />
+                <HeaderStyle BackColor="#383860" HorizontalAlign="Center" />
                 <ItemStyle HorizontalAlign="Center" />
                 </asp:BoundField>
                 <asp:BoundField DataField="jobtitle" HeaderText="Job Name" >
-                <HeaderStyle BackColor="#1AB188" HorizontalAlign="Center" />
+                <HeaderStyle BackColor="#383860" HorizontalAlign="Center" />
                 <ItemStyle HorizontalAlign="Center" />
                 </asp:BoundField>
                 <asp:BoundField DataField="mark" HeaderText="Mark" >
-                <HeaderStyle BackColor="#1AB188" HorizontalAlign="Center" />
+                <HeaderStyle BackColor="#383860" HorizontalAlign="Center" />
                 <ItemStyle HorizontalAlign="Center" />
                 </asp:BoundField>
                 <asp:BoundField DataField="status" HeaderText="Result" >
-                <HeaderStyle BackColor="#1AB188" HorizontalAlign="Center" />
+                <HeaderStyle BackColor="#383860" HorizontalAlign="Center" />
                 <ItemStyle HorizontalAlign="Center" />
                 </asp:BoundField>
                 <asp:CommandField HeaderText="Approve/Reject" SelectText="Approve" 

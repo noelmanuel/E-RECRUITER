@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Configuration;
 using System.Data;
@@ -33,13 +34,16 @@ public partial class Jobprovider_providerregn : System.Web.UI.Page
         }
         else
         {
-            FileUpload1.SaveAs(Server.MapPath("~/C:/Users/Anita/Documents/Visual Studio 2010/WebSites/FULL PROJECT/E-RECRUITER/profileimage/" + FileUpload1.FileName));
+            string m = TextBox9.Text;
+            
+            FileUpload1.SaveAs(Server.MapPath("~/D:/E-RECRUITER/profileimage/" + FileUpload1.FileName));
             psql = "insert into jobproviderregn(compid,cmpname,cmpdesc,cmpaddr,cmpplace,mob,email,website,status)values('" + TextBox9.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox6.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "','pending')";
             obj.CreateCommand(psql);
             psql = "insert into login values('job provider','" + TextBox9.Text + "','" + TextBox10.Text + "')";
             obj.CreateCommand(psql);
         }
-        Response.Redirect("~/Jslogin.aspx");
+        Response.Write(" <script>window.alert('REGISTRATION WAS SUCCESSFULL'); window.location='providerregn.aspx';</script>");
+
 
     }
 

@@ -14,7 +14,7 @@
         {
             padding: 0;
             margin: 0;
-            height: 730px;
+            height: 745px;
         }
         .mainbox1
         {
@@ -307,22 +307,22 @@
             
         <asp:Button ID="Button1" runat="server" Height="30px" Text="HOME" 
                 Width="100px" OnClick="Button1_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White"  CausesValidation="false" />
             <asp:Button ID="Button2" runat="server" Height="30px" Text="CONTACT" 
                 Width="100px" OnClick="Button2_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White" CausesValidation="false"  />
             <asp:Button ID="Button3" runat="server" Height="30px" Text="ABOUT" 
                 Width="100px" OnClick="Button3_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                BorderStyle="None" ForeColor="White"  CausesValidation="false" />
             <asp:Button ID="Button6" runat="server" Height="30px" Text="NOTIFICATION" 
-                Width="130px" OnClick="Button6_click" BackColor="#1AB188" 
-                BorderStyle="None" ForeColor="White" />
+                Width="130px" OnClick="Button4_click" BackColor="#1AB188" 
+                BorderStyle="None" ForeColor="White" CausesValidation="false"  />
 
         <div style=" margin-left:70%; margin-top:-45px;">
             <div class="dropdown">
             <asp:Button ID="Button4" runat="server" Height="30px" Text="REGISTER" 
                 Width="130px" OnClick="Button4_click" BackColor="Red" 
-                BorderStyle="None" ForeColor="White"   />
+                BorderStyle="None" ForeColor="White" CausesValidation="false"    />
                 <div class="dropdown-content">
                 <a href="Jobprovider/providerregn.aspx">JOB PROVIDER</a>
                 <a href="JobSeeker/jsregn.aspx">JOB SEEKER</a>
@@ -355,6 +355,7 @@
                         <td class="style6">
                             <asp:TextBox ID="txtuname" runat="server" Width="200px" Height="30px" 
                                 CssClass="style7"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ControlToValidate="txtuname" ErrorMessage="Enter your username"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
@@ -362,6 +363,7 @@
                             <h4>PASSWORD</h4></td>
                         <td>
                             <asp:TextBox ID="txtpass" runat="server"  Width="200px" Height="30px" TextMode="Password" CssClass="style7"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ForeColor="Red" runat="server" ControlToValidate="txtpass" ErrorMessage="Enter Password"></asp:RequiredFieldValidator>
                             
                         </td>
                     </tr>

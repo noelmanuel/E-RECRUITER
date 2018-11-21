@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -11,6 +12,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Data.SqlClient;
+using System.Globalization;
 
 public partial class Jobseeker_takequiz : System.Web.UI.Page
 {
@@ -27,10 +29,6 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
         Label1.Text = Session["r"].ToString();
         //Label2.Text = Convert.ToInt32(index);
         Label2.Text = Session["juser"].ToString();
-        Label3.Text = Session["jp"].ToString();
-        Label4.Text = Session["jb"].ToString();
-
-    
         if (!IsPostBack)
         {
             //DataSet ds = new DataSet();
@@ -129,7 +127,7 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
                 score++;
         }
 
-        str = "insert into result values('" + Session["r"].ToString() + "','" + Session["jp"].ToString() + "','" + Session["jb"].ToString() + "','" + index + "','" + score + "','pending','" + Session["juser"].ToString() + "','pending')";
+        str = "insert into result values('" + Session["r"].ToString() + "','" + Session["jp"].ToString() + "','" + Session["jb"].ToString() + "','" + index + "','" + score + "','pending','" + Session["juser"].ToString() + "','pending','pending')";
         obj.CreateCommand(str);
         //db.database_command(str);
         //Session["total"] = score;
@@ -143,16 +141,20 @@ public partial class Jobseeker_takequiz : System.Web.UI.Page
     {
 
     }
-    protected void Button2_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/JobSeeker/jshome.aspx");
-    }
+    
+    
     protected void Button1_Click1(object sender, EventArgs e)
     {
-        Response.Redirect("~/Jobseeker/seekerhome.aspx");
+        Response.Write(" <script>window.alert('Exam Session Cancelled'); window.location='examlogin.aspx';</script>");
     }
     protected void Button2_Click1(object sender, EventArgs e)
     {
-        Response.Redirect("~/jslogin.aspx");
+        Response.Redirect("~/Jobseeker/seekerhome.aspx");
+    }
+
+
+    protected void Timer1_Tick(object sender, EventArgs e)
+    {
+        Label7.Text = System.DateTime.Now.ToString("hh:mm:ss");
     }
 }

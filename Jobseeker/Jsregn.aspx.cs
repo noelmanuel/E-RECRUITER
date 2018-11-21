@@ -33,14 +33,16 @@ public partial class Jobseeker_Jsregn : System.Web.UI.Page
         }
         else
         {
-            FileUpload1.SaveAs(Server.MapPath("~/C:/Users/MUNEERSHA/Documents/Visual Studio 2010/WebSites/PROJECT/E-RECRUITER/profileimage/" + FileUpload1.FileName));
+            FileUpload1.SaveAs(Server.MapPath("~/D:/E-RECRUITER/profileimage/" + FileUpload1.FileName));
             sql = "insert into jobseekerregn(usname,name,dob,caddr,gen,adhaar,mob,landline,email,status)values('" + TextBox1.Text + "','" + TextBox4.Text + "','" + TextBox6.Text + "','" + TextBox5.Text + "','" + RadioButtonList1.Text + "','" + TextBox7.Text + "','" + TextBox8.Text + "','" + TextBox9.Text + "','" + TextBox10.Text + "','pending')";
             obj.CreateCommand(sql);
             sql = "insert into login values('job seeker','" + TextBox1.Text + "','" + TextBox2.Text + "')";
             obj.CreateCommand(sql);
+            
         }
+        Response.Write(" <script>window.alert('REGISTRATION WAS SUCCESSFULL'); window.location='jsregn.aspx';</script>");
 
-        Response.Redirect("~/Jslogin.aspx");
+        
 
     }
 

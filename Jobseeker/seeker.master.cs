@@ -48,7 +48,7 @@ public partial class Jobseeker_seeker : System.Web.UI.MasterPage
     }
     protected void Button10_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/JobSeeker/examlogin.aspx");
+        Response.Redirect("~/JobSeeker/score.aspx");
     }
     protected void Button11_Click(object sender, EventArgs e)
     {

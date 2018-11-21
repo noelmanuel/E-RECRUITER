@@ -43,13 +43,16 @@
 
 <div style="width:100%;">
 <div style=" height:60px; width:250px; border:2px solid #ce8c45; display:inline-block; border-radius:10px;">
-    <asp:Label ID="Label1" runat="server" Text="Company" Height="60" Width="240" Font-Bold="True" Font-Size="Large" CssClass="exam"></asp:Label></div> &nbsp&nbsp
+    <asp:Label ID="Label1" runat="server" Text="Company" Height="60" Width="240" Font-Bold="True" Font-Size="Large" CssClass="exam"></asp:Label><asp:RequiredFieldValidator
+        ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddcomp" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator></div> &nbsp&nbsp
 <div style=" height:60px; width:250px; border:2px solid #ce8c45; display:inline-block; border-radius:10px;">
-    <asp:Label ID="Label2" runat="server" Text="Job Title" Height="60" Width="240" CssClass="exam" Font-Bold="True" Font-Size="Large" ></asp:Label></div> &nbsp&nbsp
+    <asp:Label ID="Label2" runat="server" Text="Job Title" Height="60" Width="240" CssClass="exam" Font-Bold="True" Font-Size="Large" >
+        </asp:Label><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddjob" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator></div> &nbsp&nbsp
 <div style=" height:60px; width:250px; border:2px solid #ce8c45; display:inline-block; border-radius:10px;">
-    <asp:Label ID="Label3" runat="server" Text="Date of Exam" Height="60" Width="240" CssClass="exam" Font-Bold="True" Font-Size="Large"></asp:Label></div> &nbsp&nbsp
+    <asp:Label ID="Label3" runat="server" Text="Date of Exam" Height="60" Width="240" CssClass="exam" Font-Bold="True" Font-Size="Large"></asp:Label><asp:RequiredFieldValidator ID="RequiredFieldValidator1" ForeColor="Red" runat="server" ControlToValidate="txtdt" ErrorMessage="Enter date"></asp:RequiredFieldValidator></div> &nbsp&nbsp
 <div style=" height:60px; width:250px; border:2px solid #ce8c45; display:inline-block; border-radius:10px;">
-    <asp:Label ID="Label4" runat="server" Text="Syllabus of Exam" Height="60" Width="240" CssClass="exam" Font-Bold="True" Font-Size="Large"></asp:Label></div>
+    <asp:Label ID="Label4" runat="server" Text="Syllabus of Exam" Height="60" Width="240" CssClass="exam" Font-Bold="True" Font-Size="Large"></asp:Label><asp:RequiredFieldValidator
+        ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtsyll" ForeColor="Red" ErrorMessage="Enter the Syllabus"></asp:RequiredFieldValidator></div>
 </div>
 
 <p></p>
