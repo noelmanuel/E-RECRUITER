@@ -48,7 +48,7 @@ body
             margin : 0;
             background-color:#fff;
             height:60px;
-            top: 0;
+           
             left: 0;
             border-bottom:2px solid #fcedb0;
         }

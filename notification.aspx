@@ -30,7 +30,7 @@
         {
             
             
-            padding: 5px;
+            padding: 5.5px;
             font-size: 10px;
             width: 10px;
             text-align: center;
